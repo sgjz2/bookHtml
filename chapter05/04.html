@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第四节 面向 21 世纪的设计 - 设计艺术的含义</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/custom-1c644fbb.css">
+        <link rel="stylesheet" href="../theme/book-header-c51114f2.css">
+        <link rel="stylesheet" href="../standalone/gallery-3d562764.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-f8f33d17.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-62ecb87f.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">设计艺术的含义</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h2 id="第四节-面向-21-世纪的设计"><a class="header" href="#第四节-面向-21-世纪的设计">第四节 面向 21 世纪的设计</a></h2>
+<p>设计观念变化的显著特点是随着科学技术特别是计算机和网络技术的发展而不断探询未知,为后工业社会寻找新的造型语言和艺术理念,就是说设计不仅仅用自己的方法研究世界,更重要的是设计研究科学技术对人和对人生存方式的影响。以 Internet 为例,人们在计算机上购物、会友、娱乐、学习已经完全可能,这便是一种高技术条件下的“日常生活”。微软公司的 Windows95 系统平台,用图形界面取代原来 Dos 系统平台的字符命令(实际上苹果电脑公司最先实现系统平台图形化),使计算机的使用大众化和平民化。微软公司总裁比尔·盖兹宣称他的 Windows95 是为所有人服务的,无论你是富人或不是富人,因为一套 Windows95 软件不过 98 美金。先进的传播技术使人们更加迅捷地获得信息,例如臭氧层的破坏本身其实是一个非常复杂的科学技术问题,却可在一夜之间家喻户晓。在科学技术高度发展的今天,设计已经不能停留在研究“物与人的关系”上,设计是将科学技术变为一般人可以理解和参与的东西。</p>
+<p>“虚拟现实”技术将改变人们的生活方式<br><span id="gallery-fig-073" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/a998f6e519de750ed64ac39552994f57371977b4d796e979365a971494cfa00d.jpg" alt=""><span class="img-wrapper"><img src="../images/a998f6e519de750ed64ac39552994f57371977b4d796e979365a971494cfa00d.jpg" alt=""></span></label></p>
+<p>事实上，虽然设计观念的变化最先发生在西方，但它所涉及到的许多社会经济现象在我国也有不同程度的表现。据上海市市长国际企业家咨询会议上一项市民消费意识调查预测认为，今后十年上海市民消费需求将呈现五大特点：一、消费水平将持续稳步提高，收入层次将进一步拉开距离；二、消费方式将由单纯物质型转向增加服务消费比重；三、消费质量将由数量和质量并重，转向以质量为主；四、消费观念和消费心理将有较大更新，新的消费方式将被逐步接受，“绿色消费”成为基本需要；五、消费结构更加走向多元化，增长知识、提高素质以及住、用、行、游、通讯等消费比重将持续上升（《解放日报》1998年1月11日）。</p>
+<p>艺术的本来目的是乐趣。而设计的本来目的却在功用，设计艺术就是符合功用的乐趣。设计观念的变化也反映出某些理想主义色彩和对科学技术的迷恋（唯科学主义）。哲学家说，未来的起点在过去（The future started a long time ago），要彻底改变人们的价值观念和思维方法需要漫长岁月，仅仅从社会经济的角度是无法解释“幸福”和“乐趣”的。但是，一个国家的社会经济状况和发展的思路与政策必然会决定其设计的发展。江泽民在第四次全国环境保护会议上第一次明确提出：“控制人口增长和保护生态环境是全党和全国人民必须坚持的基本国策。”“经济发展，必须与人口、环境、资源统筹考虑。决不能走浪费资源，先发展后治理的路子，更不能吃祖宗饭，短子孙路。”这段讲话说明了中国工业设计发展必须适应的社会经济发展的基本思路。</p>
+<p>从社会经济的角度讲，现代化的实质是工业化，西欧、北美的工业化，除英国以外都始于19世纪，到20世纪中叶进入成熟的高度工业化阶段；而其他一些地区，工业化的进程大都始于20世纪；对于广大发展中国家来说，则始于第二次世界大战之后。因此，工业化是一个世界性的进程，而且现在看来这个进程远没有到达终点。工业化带来的是工业文化或工业文明，其本质是追求物质的。西方在达到高度工业化和工业化的过程中，一方面生活达到一个新的水平，另一方面也目睹了工业化带来的一切负作用，他们的反思是可以借鉴的。</p>
+<p>一位独具一格的设计师丹麦人福林特（Niels Peter Flint）的设计观念能给我们许多启示，福林特（Flint）受过建筑师、设计师、舞台美术和演员的专门训练，他的设计生涯始于赫赫有名的梦菲思（Memphis）总部。他怀疑西方物质享乐和消费主义价值观，主张从工业文明的物质享乐转变为非物质的过程，强调服务和无处不在的信息交换。他甚至向往东方天人合一的思想。现在他专门从事“衍续”（sustainable）产品和建筑的概念设计研究，并开设了一家</p>
+<p>航天飞机的绝热陶瓷片，高技术与手工艺生产方式的精妙结合</p>
+<p><span id="gallery-fig-074" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/4b1239b5e068370d9a443507c4a3c05a28065ae7b9a6d3abf26b08eb2c3fac18.jpg" alt=""><span class="img-wrapper"><img src="../images/4b1239b5e068370d9a443507c4a3c05a28065ae7b9a6d3abf26b08eb2c3fac18.jpg" alt=""></span></label></p>
+<p>以自己的名字命名的 Flint 商店，专门出售 “衍续” 产品。</p>
+<p>看样子，能否有效地推进工业设计的进步，设计师的设计观念是关键。而设计观念能否发挥良好的作用，社会经济则是关键。至此，我们可以作出这样的结论：工业设计的一个关键问题是处理好设计观念与社会经济的关系。今天我们正在致力于我国工业化的目标，并把它作为改变国家面貌、增强国家实力、改善人民生活及提高国际地位的战略性措施。面对日益繁荣的消费市场和对设计不断提高的需求，一方面设计师要积极地面向市场，使设计成为推动市场、推动消费的重要力量，实现设计的职业化；另一方面设计师要更新设计观念，借鉴西方先进的文化成果，使设计成为引导市场、引导消费的重要手段。设计与社会经济形成互动关系，这是我国面向21世纪设计发展的关键。</p>
+<p>罗荣渠在《现代化新论CD世界与中国的现代化进程》一书中，对东亚经济增长现象作出了详细讨论。二战以来的半个世纪，在整个世界的发展中，东亚的崛起十分引人注目。这一地区的突出变化是其经济增长的速度领先于世界其他地区，甚至远远超过西方国家经济增长的最高记录。西方国家的经济增长率最高也只有3%~5%，但是战后东亚的许多国家的经济增长率却达到了7%~8%甚至更高。如果从文化视角观察，我们会发现从工业革命至今，共经历的三次工业化浪潮中，第一、二次工业化浪潮发生在基督教文化圈（只有日本例外），而第三次浪潮则明显让位于儒教文化圈。所谓儒教文化圈是指中华传统文明影响所涉及的国家和地区，包括中国（含香港、台湾）、日本、朝鲜、韩国及东南亚各国。这一文化圈不论人种、文字、家族结构、生产方式、生活方式、价值观念、思维方式都有历史形成的共同性和相关性。</p>
+<p>外向型经济是东亚经济的共同特征。东亚经济受到国际贸易体系、国际经济环境、文化环境的影响。对东亚经济的成功有许多不同见解，以日本的全球性的成功为例，产品设计是关键。日本政府和公司在寻找和确定具有潜力的全球市场时，非常成功。他们选择那些需要高技能、劳动密集、耗费资源少的行业，如家用电器、照相机、手表、摩托车和制药作为设计和开发的对象；选择那些技术正在变革和进步中的产品市场；他们的设计选择世界各地人都普遍愿意接受和购买的设计风格和式样。日本人在进入目标市场前，派精悍的研究小组评价该国市场并制定战略构思，以确定那些尚未被现有产品所满足，可以形成潜在市场的机会。他们的设计有时是价格较低、减少部分无用或暂时不用的功能的改型产品；有时是与竞争对手同等品质但价格较便宜的产品；有时是质量更高或者具有新功能或新型的产品。日本人着眼于占领市场而不是一开始就获取利润。与日本经济发展相似，东亚国家的产品设计走的是同一条路子。</p>
+<p>外向型经济对设计的最大负面影响是仿造和庸俗地迎合国际市场的需要，东亚的产品也许可以进入国际市场，但东亚的设计却无法在国际上起主导作用。因为，市场在哪，设计就在哪。欧美发达国家的产品是以各自独特的设计式样和文化观念在产品上的体现来赢得市场的，是以工业和科学技术实力以及文化影响力为基础的。作者曾有多次机会与欧美设计师谈到东亚特别是日本的设计，经常可以听到说：那是仿造欧洲多少年多少年以前的设计。因此，不能忽视外向型经济对设计的这些可能是负面的影响。</p>
+<p>设计师要面向市场，但是不能过于执着。设计师还要追求设计的文化、思想和观念价值，要勇于创新和树立独特的个性风格。未来的市场在中国，未来的设计也在中国。</p>
+<p>本世纪最后的经济奇迹是知识经济。提出知识经济是基于这样的事实：世界经济的发展比以往任何时候都更加依赖于知识的积累、传播与运用，计算机、微电子等知识密集型产业是所有产业中增长最快、产值最高的产业。联合国经济合作发展组织所有成员国的科研经费的近2/3投向高新技术，该组织主要成员国的50%以上的国内生产总值以知识为基础。美国在全世界向知识经济时代的推进中领先一大步。</p>
+<p>近年来美国经济增长的主要源泉是四万多家软件公司和三百多家芯片公司。1996年美国全年新增产值的2/3是由微软这样的企业创造的，1994年至1996年间，高新技术产业对美国国内生产总值的贡献率已达27%，远远高于汽车产业的4%。</p>
+<p>根据美国商业部1998年发表的《崛起的数字经济》报告，网际网络发展的速度超过了它以前所有的媒体技术。无线电广播问世38年后拥有5000万听众，电视诞生13年后观众达到同样的数量，而网际网络从1993年对公众开放到拥有5000万用户只花了4年时间。预计到2001年网际网络使用者将达3亿。截止1998年底，中国上网电脑已达75万台，上网用户210万，比上年增长213%。1999年中国还将投资1900亿元进行信息通信网络建设。</p>
+<p>有形物质的作用相对降低，知识和智力的作用相对提高，这可以通过美国同日本两个世界上最发达国家的比较说明。日本的钢铁企业是美国的4倍，摩托车工厂是美国的5倍，汽车企业是美国的3倍。为建造这些企业，日本投入了大量的有形物质。相反，美国的芯片公司比日本多4倍，计算机和软件公司比日本多14倍。美国的有形物质投入比日本少，例如微软公司就没有传统意义上的厂房，但国内生产总值和经济增长率却远远高于日本。</p>
+<p>从知识经济对人们的生活方式和家庭功能的影响看，曾因工业经济的兴起、发达而丧失的家庭生产功能正在逐步得以恢复。1991年全美就有4千万人在家上班，用计算机与同事、国内外客户、政府机关和公共机构发生密切的工作关系。美国国内的计算机已到了无所不在的境地。60%的办公人员使用计算机（亚洲只有10%），约有6千万成年人上网，占全球用户数的55%，50%的商业应用计算机是互联的。</p>
+<p>信息技术与传统产业的结合正使传统产品升级换代。如1997年，美国IBM公司展出的新型汽车——网络汽车，就是既能在水泥高速公路上行驶，又能在信息高速公路上行驶的全新汽车：司机可用语言指挥汽车，通过显示屏了解汽车各种功能的即时状况，还可上网发送电子邮件，乘客也可利用座位上安装的个人终端，通过网络向世界各地传递信息。</p>
+<p>人类已经叩响了知识经济时代的大门，而且准备伸手推开这扇通向更为辉煌的新时代的大门。</p>
+<p><span id="gallery-fig-075" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/f84897d186962cb8fc5b009bfb45b76d08dfe8ff410aaf616f2b51ad65da19a3.jpg" alt=""><span class="img-wrapper"><img src="../images/f84897d186962cb8fc5b009bfb45b76d08dfe8ff410aaf616f2b51ad65da19a3.jpg" alt=""></span></label></p>
+<p><span id="gallery-fig-076" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/0967369bd486b19d8705c11048e2e9183e79f48e69d2326978ead175990894b0.jpg" alt=""><span class="img-wrapper"><img src="../images/0967369bd486b19d8705c11048e2e9183e79f48e69d2326978ead175990894b0.jpg" alt=""></span></label></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter05/03.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../chapter06/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter05/03.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../chapter06/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/book-context-05123c47.js"></script>
+        <script src="../theme/reading-sections-6f49318a.js"></script>
+        <script src="../theme/section-editorial-notes-077f39ac.js"></script>
+        <script src="../standalone/gallery-data-51913a27.js"></script>
+        <script src="../standalone/gallery-730ec024.js"></script>
+        <script src="../theme/custom-26cf057f.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

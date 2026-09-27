@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第三节 高档产品 - 设计艺术的含义</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/custom-1c644fbb.css">
+        <link rel="stylesheet" href="../theme/book-header-c51114f2.css">
+        <link rel="stylesheet" href="../standalone/gallery-3d562764.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-f8f33d17.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-62ecb87f.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">设计艺术的含义</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h2 id="第三节-高档产品"><a class="header" href="#第三节-高档产品">第三节 高档产品</a></h2>
+<p>高档产品与一些品牌密切相关，如 Mont Blanc, Bang &amp; Olufsen, Bodum, 还有 Panasonic 便携式电视机和 Braun 电动剃须刀等。一些品牌是世界知名品牌，也有的品牌是地区性的，如欧洲或美国的知名品牌。各种品牌的喜好人也不尽相同，有的是专业的爱好，有的是富裕人家，有的是年富力强，也有的是年轻一代追逐时髦，是一个范围更加广泛的消费群。</p>
+<p>西方20世纪60年代和20世纪70年代曾经出现过追逐“纯艺术”的高潮，而80年代又出现了追逐“设计”的高潮，人们参与到各种与设计有关的活动中来，购买设计、讨论设计、欣赏设计。六七十年代的纯艺术高潮中，纯艺术被彻底的大众化，出版了成千上万的艺术图书、明信片，各种报刊杂志都以大量的篇幅探讨艺术。当时的著名口号是：“人人都是艺术家”。可惜的是20世纪80年代的设计高潮没有达到如此盛况空前的程度。</p>
+<p>20世纪80年代的设计高潮，使设计成为了独特的“文化载体”。艺术品是典型的文化载体，一件艺术作品可以因其艺术的价值而被博物馆收藏，作为代表时代的经典文化。设计取得经典文化的地位使设计的价值发生了根本的变化。过去，普通日常的物品根本不登大雅之堂，更谈不上被博物馆收藏。现在，打字机、电动剃须刀、茶壶、计算机、水笔，同样会因其设计的价值而被博物馆收藏。这些产品堂而皇之地在博物馆展出，照片按照艺术图书编辑出版，分门别类和进行文学批评。设计已经不仅是商业性活动，设计的文化性、经典性和时代性，使设计获得了文化意义和价值，这首先要感谢我们的博物馆文化。</p>
+<p>如果人们买到的产品是博物馆展出的产品，是艺术图书发表的产品，是文化权威推崇的产品，如格雷夫(Graves)设计的后现代主义茶壶和Mont Blanc的水笔，那就是设计界梦寐以求的所谓“买得起的身份”，是真正的高档商品。购买这样的高档产品，如同购买了经典的文化品。</p>
+<p>专业摄影师发表在艺术图书中的产品和大众知名人士拥有的产品，象征着价值和人的身份。购买这种产品既是身份和档次，同时又是优良品质、艺术设</p>
+<p><span id="gallery-fig-122" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/8abdb8cbebe4d0aa7f49dbe6e5cb85f6b5a05efc214f31b42a0b3f5dee095b68.jpg" alt=""><span class="img-wrapper"><img src="../images/8abdb8cbebe4d0aa7f49dbe6e5cb85f6b5a05efc214f31b42a0b3f5dee095b68.jpg" alt=""></span></label></p>
+<p>计和功能完善的产品。因此，高档产品从根本意义上是货真价实和出类拔萃的产品。对高档产品的需求不仅来自人的物质或生活需要，而且来自人的精神或心情需要。在这方面现代无所不在的广告和市场营销术对人产生了巨大的影响，广告唤起的兴奋、魅力和诱惑，牵动了人的期望和消费冲动，然而许多情况下实际产品并不能满足人们的这些需求。在我国不切实际的广告盛行，这种情况西方也曾出现过。研究认为，广告不切实际是因为广告“创造”的形象与实际产品档次不一致，产品形象与广告形象之间的矛盾和不协调，是早期广告的通病，造成人们对广告普遍不信任感。直到本世纪末，随着高档产品设计和品质的完善以及广告观念的更新，广告形象与产品形象达到了一致性和相关性。高档产品对人的生活品质的改善是一个全面的概念，其中十分重要的是高档产品使用起来有一种“顺心感”。高档产品比一般产品设计和制造质量更高，因此大大减少了产品本身带来的许多麻烦。现在，设计研究人员的普遍看法是，科学技术的进步，将带来高档产品的“大众化”。这样一来，高档产品的价值将更多地体现在设计、艺术、质量上，而不是体现在贫富差异的概念上，人们的精神和心情需</p>
+<p>Philippe Stack 设计的橙汁机，一件欧洲人见人爱的物品，令人赞叹不已的设计</p>
+<p>求将更多地回归到自然和反朴归真的观念上。就是说高档产品的设计是追求一种品位，而不是炫耀财富。</p>
+<p>设计与绘画、雕塑一样成为经典文化的组成部分是整个人类文化进步的必然，是一种科学技术与艺术结合的文化形态。“设计性”（与艺术性一样）是高档产品的价值所在。无论产品如何“普通”，如门把手、手表、水笔、打字机，只要设计品位高就会身价百倍。许多“普通”产品因为是出自著名设计大师的手或是具有设计史学价值而被收藏，引起理论家和传媒的讨论。由此而来，一整套与设计有关的术语、概念、意义、哲理和学说，一大批设计大师、设计工作室、设计风格被文化记载下来，成为社会的观念形式。</p>
+<p>高档与实用如同富裕与温饱一样是不同的概念，是不同的价值取向。高档产品是高新技术、艺术、文化和生活情趣的追求，但是在西方物质享乐主义和消费主义的影响之下，高档产品“异化”出来的金钱至上和其他不健康的生活方式，也必须引起足够的警惕。在西方的文化反思中，对高档产品持怀疑观点的人也不少。1987年美国的SPY杂志发表了一篇名为《雅皮士色情》（Yuppy Porn）的设计批评文章，文章开头的一篇散文诗表达了对高设计的看法：</p>
+<p>紧凑的、合成的、非常安静的；</p>
+<p>钢韧却有弹性;</p>
+<p>黑的、白的、灰的、银灰的；</p>
+<p>不是德国人或意大利人的佳作，就是假德国人或假意大利人的赝品；</p>
+<p>也许是电子的，可能的厂要昂；</p>
+<p>我们小时候，没有它们；</p>
+<p>品质真高，高出我们的需要；</p>
+<p>没有必要需要，只有必要解释；</p>
+<p>决不便宜；</p>
+<p>我们感到被欺骗，却抑的人工、买时的兴奋；</p>
+<p>我们感到内疚，却忍不住炫耀。</p>
+<p>文章认为高设计产品纯粹是财富和身份的标志。人也许会因为挑战和嫉妒，为了与朋友竞争，去购买高设计产品。另一种观点认为，高设计不过是广告制造的虚假需要。电视等广告媒体几乎是穷尽一切手段创造成人的童话，引发人的欲望和幻想，高设计产品上被赋予了许多不切实际的东西，造成消费者的认知混乱，从而分辨不出真实与虚幻，把拥有高设计产品与拥有身份等同起来。高设计的虚幻引起了人的疯狂和莫须有的刺激与满足，正是在这一点上，高设计现象被贬为“色情”现象。</p>
+<p><span id="gallery-fig-123" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/658ef8445189fe4f181bba21ea85eb7bfc54a93373013a443af225c2d2013294.jpg" alt=""><span class="img-wrapper"><img src="../images/658ef8445189fe4f181bba21ea85eb7bfc54a93373013a443af225c2d2013294.jpg" alt=""></span></label><br>George Sowden 设计的不锈钢咖啡具，采用先进制造技术加工出工艺品品质</p>
+<p>世界著名建筑师 Hans Hollein 设计的把手，艺术品位很高</p>
+<p><span id="gallery-fig-124" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/5b8b778d2941d1a840649ab46efd5027c8c1082eabefc5e7d64efffc6b90e5d7.jpg" alt=""><span class="img-wrapper"><img src="../images/5b8b778d2941d1a840649ab46efd5027c8c1082eabefc5e7d64efffc6b90e5d7.jpg" alt=""></span></label></p>
+<p>懂得一些艺术理论的人都知道，有着巨大影响的精神分析派心理学家弗洛伊德也曾经把艺术说成是“性”的升华，无论正确与否，把高设计和装饰艺术等同于色情的说法仍然是牵强附会的。从心理上讲，“色”是个体和内向的过程，决没有“尊重”、“魅力”、“智慧”和“高兴”这些可以与人“分享”和“共有”的感觉。设计的目的是分享：是一项公共的活动，是公共为目标的。设计追求的是大众化的快乐，而不是个体隐蔽性的满足。有关这方面的研究和争论主要在西方理论界进行，但如何区别“美”和“色”的问题在我国设计艺术发展中也是很重要的。在欧洲有一批像思维顿(George Sowden)和思顿(Matteo Thun)这样的设计师，他们的设计极其时髦和前卫甚至带有雅皮士风格，但又积极向上和充满正气，是目的纯正的优秀设计。</p>
+<p>高设计是追求设计性和艺术性的，因此设计程序和方法上更强调设计师个人的创造和风格。思维顿（Sowden）和思顿（Thun）都不相信市场调查方法，不相信设计程序，轻视（当然是不那么尖锐地）德国式的理性、效率和从市场出发分阶段实施设计的原则，并且有意识地保持与德国布劳恩（Braun）风格的距离，更谈不上有包豪斯（Bauhaus）美学的痕迹。正是由于这种分歧，他们甚至不承认自己是产品设计师（工业设计师），尤其不是德国模式的工业设计师。设计方法是完全不同的，如同拿酒和可乐比较一样，这并不是设计上谁优谁劣的问题。思顿（Thun）宣称他的设计目的是发扬和维护人类的幸福。思维顿（Sowden）说他的设计目的是从设计中清除暴力性。他说：“我只希望我的设计能使我感受快乐和安全，而整个70年代的产品设计充满了暴力性，甚至电话机看上去都要加速运动。”</p>
+<p>思维顿（Sowden）和思顿（Thun）都是学建筑出身的，思维顿（Sowden）在与Nathalie du Pasquier公司合作时，设计过鞋、地毯、钟、家具和计算机键盘，如此广阔的产品设计范围为他今后的成功打下了坚实的基础。在后来与著名博东（Bodum）公司合作时，他运用高技术手段追求手工艺品效果的设计，如咖啡壶、水果盘、玻璃支架等，取得了巨大的成功。这些产品采用不锈钢板材，用扫描仪输入设计图案，然后用激光切削的方法，加工出穿透的“洞”，形成装饰性非常丰富和具有手工艺品感觉的金属制品。思维顿（Sowden）认为，用机器代替手来加工工艺品意味着工艺美术传统获得了新生，机器美学的概念是站不住的。为了高档化，博东（Bodum）公司的产品全都采用手工打磨抛光，是产品加工工艺中最为昂贵的部分。</p>
+<p>思维顿(Sowden)的高设计品质来源于装饰性和图案化的美, 这种美感由于是通过金属材料上的穿透感和精密感而显得十分强烈。与此不同的是, 思顿(Thun)对图案化的装饰不感兴趣, 他更强调形, 喜欢用建筑师的语言描述设计。对茶壶的造型, 他是这样评价, 茶壶的把手就是屋子的走廊或阳台, 壶盖就是屋顶, 壶的底座就是屋子的地下室, 底座上面当然就是第一层楼。</p>
+<p>介绍思维顿（Sowden）和思顿（Thun）的设计，不是研究设计史，而是要说明高设计和高档产品的造型与工艺美术和建筑艺术的深远关系，工艺美术和建筑艺术由于漫长的历史和人文性，其造型风格有着现代工业美和技术美不可替代的价值和艺术传统。思维顿（Sowden）和思顿（Thun）的努力是期望把机器的精确性、艺术的随意性、设计师的个性和工艺美术的手工性结合起来，追求一种让消费者或顾客感到幸福和安全的设计美，一种温柔和蔼的工业文明。</p>
+<p><span id="gallery-fig-125" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/b6b9fc8a9c047bc7c520885f0a81f8c16ee361dc78785559f3d39ae31524be80.jpg" alt=""><span class="img-wrapper"><img src="../images/b6b9fc8a9c047bc7c520885f0a81f8c16ee361dc78785559f3d39ae31524be80.jpg" alt=""></span></label></p>
+<p>设计发展到今天，温和的设计风格、设计的人文性和高精度加工这三位一体的高设计产品受到越来越多的重视。德国一家专业生产门把手的FSB公司，聘请多位知名的建筑师和设计师，其中有曼狄尼（Alessandro Mendini），拉姆斯（Dieter Rams），博塔（Mario Botta）和霍伦（Hans Hollein）。还从美国请来了爱森曼（Peter Eisenman），从日本请来了Shoji Hayashiu和Arata Isozaki。这些设计大师们在1986年聚在一起开了一个学术研讨会，讨论FSB的设计哲学和该设计哲学在门把手设计上的运用。FSB公司为研讨会出版了一本名为《门把手-布莱克尔研讨会》的书。正是这本研讨会的著作，从文化和知识的深度和广度全面讲述门把手的意义，从此门把</p>
+<p>梦菲斯出品的椅子，一件艺术品</p>
+<p>手堂堂正正地进入了经典文化，成为文化物品。这个关于“门把手”的故事，完全可以与“灰姑娘”的故事媲美。对设计师来说，这意味着门把手的设计可以超越普通“实用”的概念，而成为表达自己设计思想和文化理念的对象；对FSB公司来说，无疑具有极大的商业和社会经济效益。首先，公司的产品设计与世界知名的设计师和经典文化联系起来。其次，公司锲而不舍地追求设计质量，树立了公司的高设计形象。第三点是，优秀的设计和丰厚的文化底蕴，是产品上档次的最根本保证。FSB公司与所有企业一样，以经济效益为直接行为目的，但FSB经营宗旨是以高设计获得高效益。同时，将物质财富与提高人类的生活品质和文化修养联系起来，又树立了公司的人文形象。</p>
+<p>有趣的是，从一个极不起眼的门把手设计，不同文化背景的设计师反映出鲜明的民族风格：拉姆斯（Deiter Rams）的德国设计，严谨而且理性；曼狄尼（Mendini）的意大利设计，无拘无束而且变化多端；爱森曼（Peter Eisenman）的美国设计，大气而且实用。</p>
+<p>追求高设计和高档产品的公司的共同特点是聘请世界知名设计大师和提高公司的文化品味。德国陶瓷公司Rosenthal就聘请了美国著名设计师哈夫勒(Dorothy Hafner)，她是美国工艺美术界知名的陶艺和编织艺术大师，在装饰艺术上有极高的造诣。1987年荷兰Het Kruithuis博物馆举办一个循环艺术展，展出她的作品和美国著名文学批评家博拉尔特（John Perreault）为展览撰写的评论。</p>
+<p>前面谈到在Porsche的产品说明书上，哲学和政治概念是如何被用于“装饰”高档商品的形象。同样，FSB公司的研讨会也有异曲同工之妙。在英国，Saatchi&amp;Saatchi广告公司是一家商业上取得巨大成就的广告公司，该公司每年的年度报告都发表一篇高水平的前言，甚至引用Shakespear（莎士比亚）所著的悲剧《李尔王》的台词，来提高广告的道德意义。</p>
+<p>由此可见，商业文化与经典文化正在发生越来越密切的关系。这种现象被称作“文化包装”，与许多“包装”不同的是，文化包装是一种“内包装”，文化包装是通过设计和产品式样体现出来的。文化包装的文化是一种俗文化，是在经典文化基础之上，发展出来的文化形态。一谈到俗文化，我们有许许多多的禁忌和不便，中国有五千年的悠久历史文化传统，经典文化博大精深，所以一旦商人、歌星、球星和五花八门的“俗文化”出现的时候，人们的困惑是可想而知的。因此，更需要理论和实践上的大胆探索和批评。</p>
+<p>在评论哈夫勒的设计时，皮雷哈特（Perreault）提出了这样的问题，值得我们仔细考虑“哪种艺术更好？是你要买票和花时间去大城市中的大博物馆里看的巨幅绘画？还是每时每刻你都可以触摸和摆弄的（工艺品）盘子、杯子、茶托和器皿？”值得注意的是这个问题并不是从学术或艺术本质的角度提出的，这实际上是从商业目的出发对消费者的一种说服。对于一个普通人而言，拥有艺术哪怕是一件很小的东西，如盘子，比较欣赏深奥的经典艺术作品要容易和贴切得多，因此也是商家开拓和看好的市场。文化的包装就是这样，既是宣传艺术，又可能使艺术庸俗化。在设计史上，欧洲战前具有民主主义、具有强烈社会主义色彩的现代设计运动，在战后变成具有强烈资本主义特征的国际主义设计运动，就是资本主义市场经济的必然。因此，在我国社会主义市场经济条件下，文化包装也好，企业文化也好，“文化力”也好，我们都要吸收西方文明的先进成果，但同时要认真思考和研究适合中国国情和文化的设计理论。</p>
+<p>有一点可以肯定，设计师哈夫勒（Hafner）本人决不会把自己的作品与绘画大师们的作品混为一谈。问题是现代绘画与传统绘画无论在概念上还是在普通人的印象上都是完全不同的了。西方许多现代绘画作品已经失去了所谓经典性，绘画艺术也是堂堂正正的商业活动。因此，高设计的艺术价值和文化价值并不见得比其它艺术形式差。设计艺术的最大优势是贴近生活、贴近不是“艺术家”的普通人，特别是富裕起来的人。</p>
+<p>有的理论认为，高设计产品和艺术品市场的相同基础，是与欣赏艺术完全不同的拥有艺术的概念。高设计市场的特点是，所谓个人拥有权。拥有权就是价值，就是市场。从消费的立场看，欣赏、触摸和凝视着自己拥有的高设计产品和艺术品是非常独特的感受，是需要认真研究的社会心理现象。首先，进入市场的高设计产品和艺术品都是商品，因此更准确地说是高设计商品和艺术商品。这与经典艺术品是不同的。进入市场的高设计商品和艺术品是根据市场和消费者的需求和购买力生产和制作的，是艺术性和商业操作并重的市场，其经典性和艺术价值不能与经典艺术品相提并论。我们对经典艺术品的欣赏、理解、经验和形象联系，是非商业性的，拥有与否并不是最重要的，经典艺术品的价值是社会文化和历史性的。</p>
+<p>设计的目的和商业性与艺术品也有不同。设计完全是面向个人和个人消费的。当然设计的艺术性被作为一种商业化的东西反复强调，设计在博物馆大量展出，并与艺术品一样享有艺术的地位，都不能从根本上改变设计的实用和功利的独特性。</p>
+<p><span id="gallery-fig-126" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/6b029d6db72cbbc09c001aa6333e3e533fc64854a16d50d24246ab1f225fca43.jpg" alt=""><span class="img-wrapper"><img src="../images/6b029d6db72cbbc09c001aa6333e3e533fc64854a16d50d24246ab1f225fca43.jpg" alt=""></span></label></p>
+<p><span id="gallery-fig-127" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/73f62de3278d2b915ef23040003c9a07f5da8d6b099c462ff6314817d1a8b1be.jpg" alt=""><span class="img-wrapper"><img src="../images/73f62de3278d2b915ef23040003c9a07f5da8d6b099c462ff6314817d1a8b1be.jpg" alt=""></span></label></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter08/02.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../chapter09/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter08/02.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../chapter09/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/book-context-05123c47.js"></script>
+        <script src="../theme/reading-sections-6f49318a.js"></script>
+        <script src="../theme/section-editorial-notes-077f39ac.js"></script>
+        <script src="../standalone/gallery-data-51913a27.js"></script>
+        <script src="../standalone/gallery-730ec024.js"></script>
+        <script src="../theme/custom-26cf057f.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

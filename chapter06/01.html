@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第一节 塑料的“困惑” - 设计艺术的含义</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/custom-1c644fbb.css">
+        <link rel="stylesheet" href="../theme/book-header-c51114f2.css">
+        <link rel="stylesheet" href="../standalone/gallery-3d562764.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-f8f33d17.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-62ecb87f.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">设计艺术的含义</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h2 id="第一节-塑料的困惑"><a class="header" href="#第一节-塑料的困惑">第一节 塑料的“困惑”</a></h2>
+<p>对设计来讲，塑料是一类材料的统称。因为，不同塑料的用途大不相同，所以塑料作为材料术语常常会使用不当。耐高温塑料可以用来制造汽车发动机，而普通塑料则用作塑料袋。然而，对于广大的普通老百姓而言，塑料所能表达或体现的价值与科学的说法也许大相径庭。塑料为设计师和企业开辟了一个巨大的产品空间。</p>
+<p>一口塑料的炒菜锅就会与人们对塑料的理解和使用习惯发生有趣的矛盾。人们可能会担心塑料锅被高温融化。在厨房里我们自然而然地接受像陶器和金属这类材料，陶器是经过高温烧结的，金属是煅造成形的，本身就是与火联系在一起的材料，因此在我们感觉中它们才适合于烹饪，而塑料根本就不属于火。然而，从材料科学上讲，塑料菜锅是完全可能的。塑料的用途非常广泛，但它对人来说仍然是一种陌生的材料。塑料除了实用以外与人没有任何情感上的联系。</p>
+<p><span id="gallery-fig-078" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/3b9127a64756d9ebc0a4076a0ac0a744eb518e9394aa39e3e1ff4b0934402103.jpg" alt=""><span class="img-wrapper"><img src="../images/3b9127a64756d9ebc0a4076a0ac0a744eb518e9394aa39e3e1ff4b0934402103.jpg" alt=""></span></label><br>“丹麦2”塑料电话，Henning Andresen设计</p>
+<p><span id="gallery-fig-079" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/19da0bac3aace4e55d8ae5099d3ed65bad38829ef533725fd1f58784118d6ad4.jpg" alt=""><span class="img-wrapper"><img src="../images/19da0bac3aace4e55d8ae5099d3ed65bad38829ef533725fd1f58784118d6ad4.jpg" alt=""></span></label><br>意大利 Bertone XI/9 赛车，铝合金车身</p>
+<p>长期以来，塑料进入人们的日常生活只是一种代用材料，而代用品是缺少价值的。塑料被用来作为许多材料的代用品，最多的是金属。从塑料篮取代镀锌铁丝篮，塑料管道取代铜管道，塑料器件取代室内的黄铜小五金，到现在塑料取代金属成为电熨斗和电水壶的主要材料。20世纪80年代塑料“改头换面”，出现了碳纤维和许多合成材料，就立即取代了飞机和汽车的一些重要金属材料做成塑料结构部件。塑料已经渗透人类生活的每一个角落，它的普遍存在与金、石、木、纸不相上下，但却得不到人们对金、石、木、纸的那种情感联系。对人类而言，塑料是一种孤独的材料，永远是金、石、木、纸的配角。</p>
+<p>消费者也许对塑料没有特别的爱好甚至很少注意到塑料的存在，但是只要给予足够的重视，就会很快认识到塑料相对于其他材料的优越性。塑料篮子比较镀锌铁丝篮重量轻、耐用且无响声。除了塑料外，人们已经不能想象电吹风这样的产品能用其他材料制造。因此，塑料又已经成了许多产品的“自然材料”，如计算机面板、计算器、收音机、钟表、食品加工器、厨房容器，还包括各种用途的塑料袋。</p>
+<p>塑料科学技术进步日新月异,包括分子工程水平上的研究都是非常进步的,各种不同的塑料层出不穷。然而,对普通大众而言,塑料科学远不如那些可见的事物如一位木匠的工作来得亲切。因此,塑料代表的进步是内在的。从造型意义上看,塑料最具表现力的是表面肌理的细致入微,尤其是比较手工艺品。塑料的造型最难处理的是材料本身固有的感性特征,塑料不随时间改变面貌,也没有给人以冷暖的接触感,表情迟钝和呆滞。如果你擦拭塑料,塑料也许会更干净,但决不会更光亮,这与人们擦拭石材和金属后的感觉是完全异样的。塑料拒绝光彩。</p>
+<p>从世俗生活来说，人与塑料的感情关系有一些特点：第一，塑料制品的加工过程与我们熟悉的产品加工过程之间有相当的距离，塑料制品不能再加工，更不能敲敲打打，也不能重新铸造或者雕刻，人与塑料似乎根本不存在互动关系。人们对木材、石料和金属的认识，通过家具、建筑和制品，形成了许多关于塑造、刻凿、间架营造、烧制的加工构造观念。这些已经形成的“加工”观念并不能帮助人们想象和理解塑料制品，反而疏远了人们同塑料制品的关系。第二，塑料的声响表情是压抑的。塑料不产生共鸣，也不发出叮叮当当的清脆响声，塑料发出的声响沉闷。塑料物品的形象似乎模糊不清，令人费解。第三，塑料的表面肌理平淡无奇，手指触摸有光滑感和微弱的温度感，但没有瓷器和金属的坚硬。设计师为增强塑料的肌理感采用了各种设计手段，如在使用者用手接触处设计棱线排列或凹凸纹，形成独特的造型语言。通过模仿木材或大理石等自然材料的表面图案，也能获得塑料的装饰效果。装饰虽说不如触觉来得真实，但视觉效用有利于改善塑料的肌理感。塑料的肌理设计仍然是不能忽视的重要问题。</p>
+<p>事实上塑料非常适合做其他材料的代用材料,而且具有相当的外形模仿能力。遗憾的是塑料的模仿从来没有达到令人满意的程度,给人不伦不类的感觉。但是以假乱真也是有的,如一种室内装修用的线角塑料材料,惟妙惟肖地模仿石膏的质感,甚至石膏粉的表面感觉。</p>
+<p>塑料的装饰处理在表面上也可以模仿其他材料，但无论如何不能在肌理、气味、光泽上达到像木材、纸的感觉。塑料材料在性质上的这种苍白乏力和缺乏生气，竟然成为一种社会的比喻，如塑料人、塑料食物。</p>
+<p>令人耳目一新的是新型塑料复合材料的出现。复合材料是由两种以上的材料复合而成，因此，也就复合了多个材料的特性，从而获得一种独特的复合特性。我们熟悉的水泥制品也可以说是复合材料。</p>
+<p>新型复合材料是以聚合树脂同各种纤维，如碳纤维、玻璃纤维复合而成。不同类型纤维的力学特性不同，碳纤维的钢性大，而玻璃纤维的柔性大。复合材料表现出丰富多彩的“个性”，是其内在物理特性决定的。曼梓尼（Ezio Manzini）在《材料创新》（The Material of Invention）一书中指出，复合材料的特性取决于填充材料（component）与基质材料（matrix）的界面特性。聚合树脂就是基质材料。纤维材料的填充方法很多，最有效的方法是将沿树肢腔体方向布置纤维，形成高强度的受力结构。</p>
+<p>复合材料的发展和运用首先在军事领域，冷战时期，欧洲、美国和苏联为了在军备竞赛上取得优势，纷纷发展高速、高机动性和高强度的飞机，要求材料具有低重量、高强度、高钢度。军事上迫切需要高强度的飞机机翼。高顿（J. E. Gordon）教授在《高强材料新科技》(The New Science of Strong Material)一书中认为，新型复合材料出现的原因，是常规的飞机结构材料，如铝合金、钛合金、木材、钢材和镁合金，都在“强度与重量比”上无法满足要求。更高速和更大型的飞机就意味着必须有新材料。</p>
+<p>军事工业率先在飞机喷气发动机上采用先进的材料，以提高飞机功率与飞机重量的比值。军事工业以挥金如土著称，但美国F-15型战斗机的喷气发动机取得了功率与重量8:1的非常经济的设计。</p>
+<p>高性能碳纤维复合材料如果按强度与重量比比较，大约是钢材的6倍，是铝金属材料的40%，复合材料还以重量轻著称。玻璃纤维复合材料是绝缘材料，防磁、防化学腐蚀。</p>
+<p><span id="gallery-fig-080" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/832bd7b97d443b9750be2e3010fa1ed3a2f4d84a23f864e3dcee5114a253fb31.jpg" alt=""><span class="img-wrapper"><img src="../images/832bd7b97d443b9750be2e3010fa1ed3a2f4d84a23f864e3dcee5114a253fb31.jpg" alt=""></span></label><br>Liquidmental 高尔夫球棒，由锆、钛、镍、铜等材料合成的合金</p>
+<p>高技术是高投入和高风险的技术，需要国家的政治意愿和公众的支持，因此，军事工业是唯一有能力发展高技术的工业，其他商业企业无能为力。当然，近期随着高技术产业的民营化，出现了一批具有投资能力和风险能力的跨国公司。但高技术发展的速度仍不及军事工业。材料科学家 Neil Waterman 博士曾对设计师和企业家指出（Material for Profit, in Engineering magazine, 1988），第一，没有人会无缘无故地投资新材料的研究，更没有人把新材料摆在货架上任人选用。材料是设计出来去满足特定要求的，例如飞机制造业；第二，新材料并不一定意味着全新的产品。事实上，人们设计和制造的产品，有缺陷是不可避免的，材料研究往往也是针对产品的更新换代，使其更加可靠、更加安全。</p>
+<p>材料与整个工业技术的关系非常复杂。虽然，人们早就预测像塑料、复合材料这样的新材料会有巨大的前景。但20世纪80年代末开始，新材料在工业上的使用开始受到怀疑，最大的阻力来自于工程本身。现代制造技术是以“重”工业方式为基础的，即以金属加工工艺技术为基础的，如飞机部件、汽车部件的加工采用铆接、焊接、螺钉螺帽连接、装配，零件加工的工艺和精度十分规范严格，但塑料制品采用模具制造，这与现行的工业制造工艺完全不同。运用新材料的阻力还来自于生产方式，现代工业的生产方式是高度集成的生产线。生产线是一种要求绝对可靠的生产方式，它的生产过程和结果环环相扣，构成完善的现代制造技术。工业取得今天的制造技术成果经历了漫长岁月和付出了巨大代价，生产线是现代工业文化的经典之作。因此，新材料如果要改变现代生产方式需要加倍的成本。</p>
+<p>早在20世纪70年代，罗尔斯——罗伊斯（Rolls-Royce）RB211飞机引擎设计就遇到了新材料的问题，引擎的风扇叶片如果被飞行物（例如鸟）碰撞，就会粉碎破裂。劳斯莱斯也因为一系列技术问题而破产。当然，后来劳斯莱斯公司重整旗鼓，并且发展成世界最成功的引擎生产企业。问题是直到20世纪</p>
+<p>80年代，对采用复合材料仍然抱有成见，连像汽车工业这样被认为在新材料上大有作为的工业部门也不例外，碰撞问题是阻碍复合材料运用的关键。研究人员对塑料或复合材料汽车结构件的看法是，碰撞时金属结构能够以渐变的和可控的方式吸收撞击能量，复合材料被破坏时同样能吸收大量能量，条件是碰撞的方向是正面和沿构件纵向方向。但是，汽车事故的碰撞可能在任何方向发生，侧面碰撞甚至翻滚事故的可能性很大，而在这种类型的事故中，复合材料有发生断裂的可能。</p>
+<p>为此，人们对金属与复合材料的组合结构开展了大量研究。铝合金传统上就是钢材的竞争材料，在迅速发展后又与复合材料竞争。Alcan公司研制了一种采用粘合连接方式的铝合金车架，成功地开发出意大利Bertone XI/9型赛车。但赛车是少批量高成本产品，允许采用批量生产一时无法采用的技术。直到20世纪90年代，铝合金车架才用于批量生产。德国车Treser-1 roaster的设计就采用了全新的拉伸铝合金车架与玻璃钢复合材料车身结构。</p>
+<p>有理由认为复合材料的碰撞问题终究会得到圆满解决，人们追求减低飞机、汽车、摩托车和卡车的自重，追求一种轻便的旅行方式，必然会引起设计从重向轻、从大向小的转变。</p>
+<p>20 世纪 90 年代，新材料和新结构技术加速发展。最值得一提的是欧洲在这方面的进步，空中客车 A3I0-300 机型采用碳纤维树脂复合材料和蜂窝结构的飞机尾翼，其重量比金属尾翼轻 20%，每年节省二到三千升油料。</p>
+<p>复合材料仍然十分昂贵。铝材约两到三美金一磅（合0.454公斤），而目前飞机上使用的复合材料约合25到40美金一磅。但是复合材料简化制造工艺，节约材料，也降低成本。金属件的加工需要大量的切削，复杂的零部件由多个零件组装，又需大量的连接件，如螺帽、螺栓等，是相当费时费工的工艺过程。而复合材料采用模具来制造，零件数下降约70%。</p>
+<p>1982年一位美国人靠这个由聚氨基甲酸酯制成的人造心脏存活了112天</p>
+<p>第一架复合材料公务机“总理1号”，它只用了传统飞机所需零部件的一半，美国雷神飞机公司制造</p>
+<p><span id="gallery-fig-081" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/6e7b8fbb0bd1a07df81a22a11f5f3ee76747db52d113006d4dc5cdb3c1e4f3c2.jpg" alt=""><span class="img-wrapper"><img src="../images/6e7b8fbb0bd1a07df81a22a11f5f3ee76747db52d113006d4dc5cdb3c1e4f3c2.jpg" alt=""></span></label></p>
+<p><span id="gallery-fig-082" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/c5bcb98524dc3c25259c81fcd5483c2c43aa3eb3f38b89b624c99dcfe082aac5.jpg" alt=""><span class="img-wrapper"><img src="../images/c5bcb98524dc3c25259c81fcd5483c2c43aa3eb3f38b89b624c99dcfe082aac5.jpg" alt=""></span></label></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter06/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../chapter06/02.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter06/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../chapter06/02.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/book-context-05123c47.js"></script>
+        <script src="../theme/reading-sections-6f49318a.js"></script>
+        <script src="../theme/section-editorial-notes-077f39ac.js"></script>
+        <script src="../standalone/gallery-data-51913a27.js"></script>
+        <script src="../standalone/gallery-730ec024.js"></script>
+        <script src="../theme/custom-26cf057f.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

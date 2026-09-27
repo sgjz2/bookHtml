@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第二节 理性主义与设计职业化 - 设计艺术的含义</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/custom-1c644fbb.css">
+        <link rel="stylesheet" href="../theme/book-header-c51114f2.css">
+        <link rel="stylesheet" href="../standalone/gallery-3d562764.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-f8f33d17.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-62ecb87f.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">设计艺术的含义</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h2 id="第二节-理性主义与设计职业化"><a class="header" href="#第二节-理性主义与设计职业化">第二节 理性主义与设计职业化</a></h2>
+<p>值得注意的是，市场也对设计提出挑战。第二次世界大战后，全球经济蓬勃发展，工业化带来制造业的迅速增长，跨国企业更是雄心勃勃。由于消费旺盛，消费品生产规模不断扩大。随之而来，产量增加、劳动力增加，尤其是广告术和市场营销术的日趋完善和职业化，迫使设计重新认识自己。在高度组织性、高效率、以盈利为目的的企业中，设计同时要与生产、财务和营销竞争而谋取一席之地。设计必须扩大内涵，必须使设计具有更大的说服力，而不仅仅是“一个漂亮的外壳”。这样，设计的职业化使得设计需要一大堆“理论”和“依据”。</p>
+<p>由此而来，设计师探索到在“准科学”的理念上发展设计职业的道路。20世纪50年代，北美、欧洲西北部和斯堪的纳维亚国家先后出现了一批设计师，他们的设计富于直觉感受，有敏锐的分析能力、解决问题和开发新产品能力。然而，多个解决方案之间的选择还是有赖证验。于是，设计程序、设计方法论等具有科学意义的课题被一一提出。</p>
+<p><span id="timeline-kovar" class="timeline-source-anchor"></span>20世纪50年代兴起运用人体工程学设计手工具，就是准科学设计的极佳例证，其设计成果斐然。捷克Zdenek Nejedly工业艺术学院雕塑家、工业设计师克瓦尔（Zdenek Kovar1917出生）对手工具人体工程学问题颇有研究，他于1952年设计的剪刀在西方国家引发了一场剪刀变革，后来被大量模仿。如1960芬兰设计师贝克斯多（Olaf Backstrom1922出生）设计，1967年由Fiskars公司生产的剪刀。</p>
+<p>克瓦尔（Kovar）研究工人手部创伤、水肿等病案。他采用了一种实验的概念，用软泥灰包裹气钻、铁锤的把手，然后，根据手留下的印痕，设计新手柄和把手。他的设计形态均为有机造形，极富雕塑感和人情味。克瓦尔（Kovar）的设计具有重要的史学意义，因为他的设计采用了“实验”的概念来获得造型的依据。从某种意义上说，克瓦尔（Kovar）的设计是一种准科学。</p>
+<p><span id="timeline-bauhaus" class="timeline-source-anchor"></span>20世纪50年代初期一些设计师的设计充满了随意性，引起许多设计杂志和理论研究部门的不满，他们希望看到更加理性的东西。其实，设计追求理性风格由来已久，尤以德国为盛，如德国艺术家、设计师贝伦斯（Peter Behrens 1868～1940）的设计风格、德意志制造联盟的“设计指南”、享有盛名的艺术与设计学院包豪斯（Bauhaus 1919～1933），都一贯主张理性设计。</p>
+<p><span id="timeline-ulm" class="timeline-source-anchor"></span>德国战后另一个享有盛誉的乌尔姆（Ulm）造型学院（1955～1968），秉承包豪斯（Bauhaus）主张和实践过的一些设计理念，追求理性设计道路。乌尔姆（Ulm）的第一个教学计划虽带有纯艺术色彩，然而，随着新院长马拉多纳多（Tomas Maldonado 1922 出生阿根廷）上任，数学、社会学、人体工程和经济学这些“理性”课程占据了重要地位。乌尔姆（Ulm）尝试淡化设计中的随意成分，追求设计思路的“正确性”，进而建立职业设计师的工作方法标准。Bauhaus 的教授们曾雄心勃勃，但始终未能达到与工业真正联姻的梦想。乌尔姆（Ulm）实现了这一切，乌尔姆（Ulm）的设计哲学被德国一家著名电器公司布劳恩（Braun）全盘采用。布劳恩（Braun）的成功使我们认识到一种伟大的设计思想和一个优秀的企业结合，对设计的发展具有的重要意义。</p>
+<p><span id="timeline-braun" class="timeline-source-anchor"></span>布劳恩（Braun）公司1921年始建于德国法兰克福，生产收音机。1945年重建，拓展为家用电器生产厂。布劳恩（Braun）公司的创始人是阿图（Arthur）和布劳恩（Eichler Braun），他们的儿子十分重视设计，1954年任命爱切尔（Gritz Eichler）分管设计事务。他委托乌尔姆（Ulm）学院设计收音机和音响，乌尔姆(Ulm)造型学院教授古格拉特(Hans Gugelot)与拉姆斯(Dieter Rams)参与设计，后者最终成为布劳恩（Braun）设计部的主任。</p>
+<p>在德国崇尚设计科学化方法的何止乌尔姆（Ulm）学院，克拉斯（Nigel Cross 1989年著作工程设计方法）认定德国一直延续了理性设计路线。他引经据典，从德国工程设计指南中找出这样的条文：在产品开发中，设计过程应分成若干个工作阶段，设计方法应是明确的、理性的，独立于工业的其他部门。</p>
+<p>O一系列剪刀造型，Olaf Backstrom设计，1960年芬兰Fiskars公司出品</p>
+<p>1952年Zdenek Kovar设计的剪刀把手，造型表达了其使用动作</p>
+<p><span id="gallery-fig-036" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/b0753dd0a3eab4d5c10c064da9d641d8a3890af27efce907514e54cbaca4da36.jpg" alt=""><span class="img-wrapper"><img src="../images/b0753dd0a3eab4d5c10c064da9d641d8a3890af27efce907514e54cbaca4da36.jpg" alt=""></span></label></p>
+<p><span id="gallery-fig-037" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/f1cf3dd4b84e6704814985a8571790f4fe603c70cade7ae82e5cd77e34dd8b64.jpg" alt=""><span class="img-wrapper"><img src="../images/f1cf3dd4b84e6704814985a8571790f4fe603c70cade7ae82e5cd77e34dd8b64.jpg" alt=""></span></label></p>
+<p>理性主义对其他欧洲和北美国家也产生了不小影响。1961年英国皇家艺术学院教授阿歇尔（Bruce Archer）上书学院建议：“用科学方式对待设计”，此人曾是艺术家后成为工程师。学院由此任命他成立设计研究组，1972年发展成为完整的研究系。阿歇尔（Archer）和他的学生约尼斯（John Chris Jones）研究科学的设计方法，将设计过程分解为“分析”、“创新”和“执行”三个阶段。</p>
+<p>实用主义和讲究效率的传统对美国发展科学的设计程序起了作用。美国一开始就把科学设计理念运用于波音707客机机舱设计，设计分析、经验性实验和造型构成完整的理性设计模式。1955年泛美国际航空公司购买了该民用客机，从此波音707客机的设计成为战后商业民用航空的设计标准。</p>
+<p>设计师泰格（Walter Dorwin Teague）和他的助手季狄斯（Frank de Giudice）合作进行707客机机舱设计。波音公司出资50万美金，设计完成1:1模型。为了对机舱座椅和食品服务舱进行人体工程分析实验，模型被用于“模拟飞行”。该设计采用的塑料顶板、镶入式照明灯、曲线高靠座椅、组合式服务车和协调安静的色调均成为民航的基本设计标准。波音公司对客机外观形象的商业意义也不忽视，委托季狄斯（Giudice）对707的机头、机尾翼和发动机外罩的外形作造型美化处理。</p>
+<p>波音707取得巨大商业成功，许多航空公司购买飞机后又先后邀请了一些著名设计师设计机舱。德雷夫斯（Henry Dreyfuss 1903~1972）受美国航空公司的委托设计其波音707的机舱。德雷夫斯（Dreyfuss）是一个酷爱收集数据的人，在他的《为人设计》著作中人体工程数据占据重要篇幅。1960年又出版图表集《人体测量》。德雷夫斯（Dreyfuss）是真正称得上既是工业设计大师又是人体工程专家的第一人。</p>
+<p>对德雷夫斯（Dreyfuss）和许多美国设计师来说，市场导向、消费导向与理性和功能之间没有矛盾。但此后美国设计屡屡出现外形美观而使用不便的产</p>
+<p><span id="gallery-fig-038" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/06730903ac6e34dd82f013e29fa8abc95a35d16cf211cb2e696a570f4188af4e.jpg" alt=""><span class="img-wrapper"><img src="../images/06730903ac6e34dd82f013e29fa8abc95a35d16cf211cb2e696a570f4188af4e.jpg" alt=""></span></label><br>泰格（Teague）为波音707设计制</p>
+<p>作的1：1机舱模型</p>
+<p><span id="gallery-fig-039" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/3b87f6d476c9062608972596e9595a048015fd6024127ed08db332dfb25f3a40.jpg" alt=""><span class="img-wrapper"><img src="../images/3b87f6d476c9062608972596e9595a048015fd6024127ed08db332dfb25f3a40.jpg" alt=""></span></label><br>德雷夫斯（Dreyfuss）撰写的《人体测量》一书的封面</p>
+<p>1973年Philips发表了第一部企业形象设计手册<br><span id="gallery-fig-040" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/874dc74383bea85ff89eb8e94e6ec4075855f94f508d5ba21ec8232890ed7c28.jpg" alt=""><span class="img-wrapper"><img src="../images/874dc74383bea85ff89eb8e94e6ec4075855f94f508d5ba21ec8232890ed7c28.jpg" alt=""></span></label></p>
+<p>品，如计算机打印机、自动票据机和摄像机等，表明设计师对功能的认识仍不清楚。</p>
+<p>事实上，1945年以来世界著名跨国公司的发展，从总体上揭示了设计师在企业运作中扮演的角色和设计的职责。荷兰Philips公司就是极好的例证。黑斯凯特（John Heskett）在他的著作《Philips——企业设计管理研究》（1989）对此作出了精辟的总结。设计的职业化使设计活动的“管理”成为研究的课题，表明设计的理性主义倾向不仅仅是涉及设计的对象，它也涉及设计本身。“设计管理”成为一门设计理论学说，它是设计在理论上非常重要的发展。</p>
+<p>Philips 始建于 1891 年，今天已成为跨国经营的国际大公司。1950 年以前，Philips 的设计理念还暧昧不清，直到魏瑟马（Rein Veersema）被任命为设计主要负责人，开发收音机、电视机、录音机和剃须刀。在 14 年的设计中，魏瑟马（Veersema）逐渐引入人体工程和价值工程，使其成为设计的出发点，并以此与公司内其他观点争论。他追求的设计理念是使所有 Philips 的产品形成“自家”形象——一种始终如一的风格特征。</p>
+<p>魏瑟马（Veersema）的助手布德（Frans van der Put）1965年代理设计主任一年，他坚持的原则是“设计必须自圆其说”。1966年挪威设计师拉恩（Knut Yran）担任了设计主任。他认为：“设计是一个技术职业，它的功能是占据市场。”“设计师必须把实现大众的目标放在自己的目标之前”。拉恩（Yran）对系统性坚信不移，亲自策划了Philips的第一部企业形象手册（House style manual）（1973），规定了公司形象的一致性原则。20世纪70年代，企业形象设计概念传遍世界，并延伸到政府部门形象和公共服务形象设计。从这个意义上讲，企业形象的概念是设计职业化和理性主义的成果。</p>
+<p>20世纪70年代初，欧洲制造商，尤其像Philips，对日本的设计质量和造型的国际性感到咄咄逼人。日本设计在全球范围的成功经验，对欧洲传统的设计观念也提出挑战。欧洲人曾经习惯于按照不同国家的趣味爱好来设计产品，即所谓“量体裁衣”，而日本Sony的成功证明国际化设计风格是一条可行的设计路线。至此，Philips不得不任命布莱奇（Robert Blaich）取代拉恩（Yran）主管设计。</p>
+<p>布莱奇（Blaich）是美国建筑和工业设计师，主张“全球设计”（global design）风格，他对日本 Sony 公司设计的随身听（walkman）可谓印象深刻。此前，他一直是美国少有的以设计著称的办公家具公司Herman Miller Inc. 的设计师。</p>
+<p><span id="gallery-fig-041" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/26a5c2552d02e8bb954cd883d174c61742d6f8bcca1dd84e2de872d710487238.jpg" alt=""><span class="img-wrapper"><img src="../images/26a5c2552d02e8bb954cd883d174c61742d6f8bcca1dd84e2de872d710487238.jpg" alt=""></span></label></p>
+<p>布莱奇（Blaich）让工业设计师和工程师一起沟通，相互了解对方的工作程序。他试图理顺工程师与设计师的工作界限，认为设计师的设计是一个系统，也包括图案、包装和市场推广方面的设计。但设计师至高无上的任务是设计用户或大众的所谓“操作机制”（即人机界面），由此布莱奇（Blaich）尽全力推崇“产品语意学”方法，即产品形态表达产品的功能和使用方式，所见即所得即所用，造物表达致用。</p>
+<p>20 世纪 80 年代 Philips 同许多公司一样，追随消费主义设计路线，“流动音乐” (Movingsound) 系列音响产品迎合都市青少年时尚</p>
+<p>1945年以后，设计的重要性和责任变得愈来愈大，设计的职业化促使设计师更多地研究设计理论和设计规则，借此引导自己的工作。出现了一批伟大的设计师，如贝伦斯（Behrens）、泰格（Teague）、德雷夫斯（Dreyfuss），他们不仅是工业设计的实践大师，同时又是工业设计的理论巨匠。</p>
+<p>但设计师为什么要提出如此多的理论呢？克拉斯(Nigel Cross)这样认为，设计师所以要提出设计目标、设计条件和设计标准，只不过是因为需要它们来判断设计的成败，这种做法与文艺复兴时期艺术家的创作方法碰巧相通。然而，现在的艺术家大都会强烈反对对创作的任何限制，因为艺术家要自己决定作品的评价标准。</p>
+<p>设计师的设计目标与许多因素相关，市场的需求、企业的生产能力和投资效益。对设计的限制有市场因素也有企业自身利益。有的设计标准显而易见，有的则不然，例如产品形象是否满意？与众不同的是，克拉斯（Cross）认为设计的核心是所谓“答案导向”（solution led）。克拉斯（Cross）对第一代职业设计师，如Loewy在一张信封的背面上设计一类的神话不以为然。他认为传统设计实际上也是解决问题，不过传统设计的方法是无论设计问题是否已经定义清楚，设计师都会先直接作出设计方案，就是先找出潜在的解决问题的方案，并借助于方案来发现和确定设计问题，然后设计下一个方案，周而复始直到满意。用现代科学方法的观点，传统设计方法是基于“试／误”思维方法的，即试验失败、再试验再失败，直到试验取得成功。</p>
+<p>不可忽视的事实是，理性、科学和解决问题当时是现在也是一种时髦，崇尚科学是一种时代精神。这种情形在纯艺术性领域也同样发生。20世纪60年代中期，西欧和北美的许多艺术学院都将艺术定义成“研究”（research），教授和学生谈论得更多的是问题和方案而不是主观意识。20世纪70年代，崇尚科学的时代精神与抽象主义艺术运动作为时尚达到了巅峰。</p>
+<p>在设计理论和实践上，意大利设计占有重要的一席之地。意大利设计的成功之路是设计作为研究与设计作为艺术的两位一体理念，设计精神与艺术精神融为一体，相得益彰。这要归功于意大利优秀的建筑艺术传统和先锋派设计运动的巨大影响。先锋派观念对意大利的政治、社会学、美术、建筑、电影和音乐的广泛影响，成为设计发展的立足点。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter03/01.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../chapter03/03.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter03/01.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../chapter03/03.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/book-context-05123c47.js"></script>
+        <script src="../theme/reading-sections-6f49318a.js"></script>
+        <script src="../theme/section-editorial-notes-077f39ac.js"></script>
+        <script src="../standalone/gallery-data-51913a27.js"></script>
+        <script src="../standalone/gallery-730ec024.js"></script>
+        <script src="../theme/custom-26cf057f.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

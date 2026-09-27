@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第一节 工具——人体的延伸 - 设计艺术的含义</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/custom-1c644fbb.css">
+        <link rel="stylesheet" href="../theme/book-header-c51114f2.css">
+        <link rel="stylesheet" href="../standalone/gallery-3d562764.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-f8f33d17.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-62ecb87f.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">设计艺术的含义</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h2 id="第一节-工具人体的延伸"><a class="header" href="#第一节-工具人体的延伸">第一节 工具——人体的延伸</a></h2>
+<p>产品的价值和意义首先体现在产品与人的关系上，反映在消费者使用日常用品的行为上。从这个意义上讲，产品的本质属性是“提供服务的工具”（参见第二章）。每个家庭都拥有各式各样的工具，它们被用于切、锯、加热、刻、钻等等。在小小的厨房和修理屋里，所有东西都掌握在人的手心之中。工具就成了人们的想象世界与实际物质世界之间的桥梁，每发明一种新工具就是创造了一个新的象征性标志，它意味着我们又可以获得新的想象世界，并为之奋斗不息。</p>
+<p>遥控器就是一个令人赞叹不已和爱不释手的“小工具”。使用遥控器可以感觉到一种乐趣和魔力，轻轻一按就改变了电视频道，轻轻一按就打开或关闭小车车门，世界的一切也许就在这轻轻一按之下发生了巨大的变化。在西方历史传说中，希伯来人的祖先在领袖摩西带领下，离开埃及去巴勒斯坦，遇到红海阻拦，摩西手杖一挥，劈开了一条水道。遥控器就是现代的“摩西手杖”。</p>
+<p>发明遥控器的目的是方便，它省力而且节约时间。然而，那些产品需要遥控器就成了不大不小的问题。电视机、CD机、VCD机、汽车，还有西方人常用的车库，都配备了遥控器。但是，电饭煲、电水壶、洗衣机和洗碗机都没有遥控器。一般认为，这类产品由于需要“装东西”和“取东西”的过程，用遥控来设定时间和程序的方便就微不足道了，而且“不经济”。当然，也不乏像Philips和Sharp这样的企业正在研究所谓“智能住宅”，其中包括了许多遥控功能。有人认为，厨房里至今还没有多少遥控产品，其根本原因是重男轻女的传统陋习，因为女人的时间不如男人的时间重要。也有人认为，电视频道不用手动控制而用遥控器是适合老年人和残疾人的，而对大众来说是一种堕落和奢侈。</p>
+<p>无论如何，人类的进步是可喜的。工业设计对产品更新换代和提高设计质量所做的贡献是不可磨灭的。科学技术使人类摆脱了生理和精神上的种种痛苦。设计职业不能懈怠的工作就是避免人的过度劳累，这一点对设计职业来说是非常实际和道义高尚的，也体现了设计的内涵和价值。更准确地讲，工业设计与工程和一切应用科学的密切关系，就是建立在使产品更加可靠和安全的基础上的。</p>
+<p>研究设计，尤其是家用概念的设计，必须从文化底蕴的角度出发。性别概念和性别差异对设计师具有很大的潜移默化作用，是一个世界范围的文化现象。现代家用产品的设计、制造和营销基本上是围绕消费群体的性别特征进行的，不仅是围绕产品使用人的性别特征，而且围绕产品购买人（实际实施购买行为的人）的性别特征。</p>
+<p>生活中，实际实施购买行为的人以女性为主体。女性仍然是家庭作业和婴幼儿抚养的主要完成人。同时女性的收入一般至少占家庭收入的三分之一（估计）。家庭对男人和女人都是一个需要付出很多很多的地方。“家庭对男人是责任；对女人是战场”，“战场”是对女性繁重家务活的生动描述。我们这一代人也许都记得自己的母亲洗衣洗被褥的情景，一床被褥要先用肥皂水（把肥皂碎未放入水中煮开）浸泡，然后用刷子一遍遍刷洗，再用脚来回踩，同时用清水冲洗，最后还要用清米汤水浆一遍，凉干后再铺开一针一线地缝好被褥。我们的记忆中充满了母亲劳累的印象。</p>
+<p><span id="gallery-fig-091" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/6630f10afb07fe2b6c62e44c8030b0e6189e9fcfc26585551338d9f59fee6420.jpg" alt=""><span class="img-wrapper"><img src="../images/6630f10afb07fe2b6c62e44c8030b0e6189e9fcfc26585551338d9f59fee6420.jpg" alt=""></span></label><br>1990年美国工业设计协会金奖，Doug Patton设计PRM—1遥控器，是一个极为简洁的解决方案</p>
+<p><span id="gallery-fig-092" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/be0432e4f0f18259973edba915581dfc55e8f006853be0dc65a2e946ebb3f9a4.jpg" alt=""><span class="img-wrapper"><img src="../images/be0432e4f0f18259973edba915581dfc55e8f006853be0dc65a2e946ebb3f9a4.jpg" alt=""></span></label></p>
+<p>洗衣机、干衣机和各种各样的轻便电熨斗的发明，新型人造纤维、洗衣粉和轻便耐用的成衣的研制成功，并且随着产品的安全性和方便性的提高，女性的家务劳动减轻了，现代当家女性的生活已经有了根本的改善。但是，无论有多少家用电器和友好的工具，女性未必都对现在的家庭生活感到满意。有人甚至认为，从一开始就应该逐步消灭洗衣这项家务，而不应该设计成一项“更轻松”的家务。</p>
+<p>到目前为止，家用产品的进步主要体现在“省力”这一方面，必须肯定现在的家务比较从前要轻松了许多。但是，我们必须看到家务的时间并没有大的减少，在“省工”这一方面设计并没有取得多大的成就。因此，设计吸尘器、洗衣机和各种清洁剂、除污剂、光亮剂等等，已经使家务成了一个日常和费事的工作。由于媒介的宣传和广告的提示，家庭卫生和婴幼儿健康的标准不断提高，虽然为厂家提供了更多的商业机会，却在无形中绷紧了女性的神经。富提（Adrian Forty）在《物与需求》（The Objects of Desire）一书中，居然说家用产品的造型式样是一种骗术，其暗藏目的是要让女性花更多的可能是完全没有必要的时间去干家务。因为，使用漂亮的工具干活是一种高贵的享受。我们只要看一看电视里洗衣粉广告中载歌载舞的洗衣女，就会理解富提（Forty）的观点并不是无稽之谈。</p>
+<p><span id="gallery-fig-093" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/6898ffb98d002f83bd970b44f8016dfd766b8b83d53e4f85372bfacb7748f7ab.jpg" alt=""><span class="img-wrapper"><img src="../images/6898ffb98d002f83bd970b44f8016dfd766b8b83d53e4f85372bfacb7748f7ab.jpg" alt=""></span></label><br>Giovanni Offredi 设计的现代厨房, 木材、铝材、不锈钢和洁净的表面处理, 意大利优秀设计</p>
+<p>19世纪的欧洲厨房，传统而温</p>
+<p>馨，但也意味着繁重的家务</p>
+<p><span id="gallery-fig-094" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/f1694ecd6eef1e7488b63940fc4df0ae850a7f916458f47604d5a32ab7b87594.jpg" alt=""><span class="img-wrapper"><img src="../images/f1694ecd6eef1e7488b63940fc4df0ae850a7f916458f47604d5a32ab7b87594.jpg" alt=""></span></label></p>
+<p><span id="gallery-fig-095" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/3ec22bd9e6527f1e06d157f35e6e206094d54cde74e09fc5b43a32c5e5915624.jpg" alt=""><span class="img-wrapper"><img src="../images/3ec22bd9e6527f1e06d157f35e6e206094d54cde74e09fc5b43a32c5e5915624.jpg" alt=""></span></label></p>
+<p><span id="gallery-fig-096" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/7657b64de2775197090e082ee6f5fd5e284dc431ab5f4d2a21c7ee7a270c831b.jpg" alt=""><span class="img-wrapper"><img src="../images/7657b64de2775197090e082ee6f5fd5e284dc431ab5f4d2a21c7ee7a270c831b.jpg" alt=""></span></label></p>
+<p><span id="gallery-fig-097" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/c6d6449c6132b68f914f622cb5c4dbfa07e00a920ca3f2033f1f4209cc86ba66.jpg" alt=""><span class="img-wrapper"><img src="../images/c6d6449c6132b68f914f622cb5c4dbfa07e00a920ca3f2033f1f4209cc86ba66.jpg" alt=""></span></label></p>
+<p>Domenico Moretto 设计的厨房用具和</p>
+<p>Giovanni 设计的一体式灶台</p>
+<p>工业设计的成就是使人从独立的家务中解放出来，繁重家务的种种痛苦已经被解脱了。但是，家务仍然是一项没有报酬的工作。无论造型风格如何美妙，无论设计什么样的形象和赋予多么大的意义，家用的工具都无法改变家务的基本性质。有一种观点认为，家务从根本上应该社会化或者职业化，由家庭转向社会的这种思路与社区服务等概念是十分接近的，但也有人认为家务由家庭向社会的转化其实是社会上层向社会下层的转化，并不能解决问题。因此，除了男女合作分担家务以外，设计师要付出更大的努力寻找解决方案。然而，设计师的观念必须改变，必须重新认识家务的性质。只要想想我们把女性生育婴儿叫做“休产假”，就知道男性主导的社会是存在性别差异的。</p>
+<p>女性化是目前家用产品造型设计的总趋势，为了造型式样甚至可以牺牲产品的功能和质量。一方面，工业与商业都一致追求家用产品的更强功能和耐用性，以便能更快和更彻底地完成家务；另一方面，家用产品的设计式样又追求轻便和女性化的风格。吸尘器、洗衣机、电冰箱等的设计都无一例外地反映出设计师这种模棱两可的两难处境。</p>
+<p>家用产品设计的一个误区是忽视基本设计（basic design），如噪音。许多家用产品，包括吸尘器、洗衣机、捣碎机，噪音强度大，超过了女性的忍耐限度。家用产品设计中，这种带有普遍性的设计问题反映出设计师更多地注意产品风格而忽视了噪音和其他方面的设计，从某种意义上也说明了设计师对女性用户的忽视和对家务工作强度的无知。家用产品设计的另一个通病是不重视产品的维护和清洗，在设计上没有为维护和清洗提供方便。搅拌机、捣碎机一类的产品清洗时间过长，造成有的用户宁肯不用也不愿意清洗。家用产品设计的女性化趋势也出现了一些问题，例如卫生间设计，甚至采用对环境十分有害的染料做成彩色卫生纸，以吸引女性购买。</p>
+<p>性别是设计师不能回避的问题。以欧洲的家用充电器设计为例，现代家庭需要使用大量的电池，包括收音机、手电筒、电剃刀和玩具。市场研究理论将电池这样一类产品称为二级产品，其购买行为称为“强迫购买”。在西方国家，主要由女性来购买电池。现在的问题是，一次性电池在经济上并不如可充电电池，但后者的市场表现一直不如人意。市场研究发现，主要原因是充电器的造型设计机械而且丑陋，对女性缺乏吸引力。经过重新设计，充电器的风格更加女性化，更适合女性的生活方式，比如与咖啡机和厨房用具的造型协调一致。因此，设计获得了成功。</p>
+<p><span id="gallery-fig-098" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/3d1efc8a36cc7731513b8f8f7e3a11a57e1952c0af7f542d1327007e3ca0511a.jpg" alt=""><span class="img-wrapper"><img src="../images/3d1efc8a36cc7731513b8f8f7e3a11a57e1952c0af7f542d1327007e3ca0511a.jpg" alt=""></span></label></p>
+<p><span id="gallery-fig-099" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/affd52eda44ac7ab1cd942e6f8224227a195a121e45d79bfd325d5e568d30872.jpg" alt=""><span class="img-wrapper"><img src="../images/affd52eda44ac7ab1cd942e6f8224227a195a121e45d79bfd325d5e568d30872.jpg" alt=""></span></label><br>上图: Fracesco Trabucco 1974年设计的立式吸尘器，造型简洁富于力度感，把握了一种工业社会的形式感。下图：同一设计师1981年的设计，工业的造型感减弱了，带有更明显的仪器和家居感，是典型的欧洲风格，男性化造型</p>
+<p>性别设计基本上是一种市场导向的设计风格。设计师和企业乐此不疲是因为他们的设计是“他”和“她”需要的那种设计。</p>
+<p>与女性风格相反，男性风格表现了威猛、凹凸感和运动感。产品外型形象的“攻击感”不仅是式样造成的，产品本身具有的功能也起到很大作用。因此，家用产品不如工业产品的风格男性化。电锯、电钻、电刨的造型离开男性风格的“攻击感”就不知为何物了。镰刀、斧头和铁锤的造型本来就具有一种不安全感，现代风格的剃须刀也暗藏着威胁。这类工具的设计常常会使设计师激动不已，因为工具的功能来自于非常明确的目的，工具因目的而存在。就是说如果手动控制可行，那么就不需要遥控器，而这些工具是真正用来改变世界的。我们不是非要吃土豆片，但需要这些工具来切、钻、碎、磨。因此，工具的生命是工具的目的性，工具设计的理想境界是融入工具的生命，设计真正有用有效的工具。</p>
+<p>日本松下公司出品的立式吸尘器，1995年日本G标志商品，既是日本风格的代表又是典型的女性化造型，蓝绿色与白色柔和对比配色</p>
+<p><span id="gallery-fig-100" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/4c3456f7c343e5f47904ba7902859634525a4721a25520675c6968574268516d.jpg" alt=""><span class="img-wrapper"><img src="../images/4c3456f7c343e5f47904ba7902859634525a4721a25520675c6968574268516d.jpg" alt=""></span></label></p>
+<p><span id="gallery-fig-101" class="gallery-source-anchor"></span><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../images/47d6814a668c6114a75c488ac4f487f1f45f0ba5334bdd248c3de018186c7869.jpg" alt=""><span class="img-wrapper"><img src="../images/47d6814a668c6114a75c488ac4f487f1f45f0ba5334bdd248c3de018186c7869.jpg" alt=""></span></label><br>Peter Dormer摄影作品, 表现隐藏刀刃的刀那种怪异感, 工具造型不能缺乏进攻性</p>
+<p>工具的功能规定了工具表达形象的特征,工具的造型不可避免地表达出人类的制造文化和象征意义的式样。因此,“锤”的造型对我们就意味着一种打入和力量,成为人类文明的具有象征性的工具。锤是我们建造一个可靠住宅的必需工具,有一种改变事物的威力,锤虽然简单却能使人获得力量。与锤的形象形成鲜明对比的是“碗”,碗的造型对我们就意味着一种温和,平静而且闲暇,也用于忏悔和祈祷。</p>
+<p>工具是果断的。为什么这样说？只要读一读哲学家斯凯里(Elaine Scarry)的著作《疼苦中的身体》(The Body in Pain)就知道了。她在讨论古代大镰刀时写道：大镰刀一挥，它所切下来的是人的手无论如何也做不到的。这一刀所收获的谷子是创记录的，而且只是人一次动作。这一刀所带来的改变是如此巨大和永久，它对人的影响将持续很长时间，即使是人离开了收获地。哲学家的语言也许有点拐弯抹角，但镰刀挥动的一瞬间，果断而且有效，这种工具的动作感和带来的效果，是人所不能不赞叹和感动的。这就像我们划破夜空点燃一支火柴一样，那个刹那间的动作和火光燃烧的情景有一种刻骨铭心的感动。因此，工具是果断的。</p>
+<p>工具也是攻击的。许多工具随时随地就可以当作武器，工具就像罗马神话中守卫门户的两面神伊阿诺斯，一面是建设性的，一面是破坏性的。正如斯凯里（Scarry）所说：把耶稣钉上十字架的铁锤是武器，而钉十字架的铁锤是工具。任何时候，只要铁锤或者水果刀碰到有知觉的肉体，它们就变成了武器；任何时候，只要铁锤或水果刀碰到无知觉的肉体，它们就变成了工具。</p>
+<p>工具造型设计在文化道德观念上存在一定的模糊性,尤其是造型风格带有武器式样时,其隐喻就超出了男性气概,也许威胁了社会和道德秩序。因此,工具设计在发挥个人创造力和遵守社会道德上有一个“度”。其实,设计如果要追求舒适感、家庭感和安慰感,必然会减弱力量感和权威性。所以,失去了男性风格的汽车设计,如警车的内部设计就变得越来越像豪华车,就连一些最应该具有男性风格的长途大货车的造型,也逐渐软化有了“娘娘腔”。汽车内室的设计采用仿皮方向盘、轻便的按键控制、高舒适性驾驶椅、空调、内置卧室,越来越家庭化、舒适、女性化。设计上追求什么?男性风格或女性风格其实都不重要,重要的是人的愉快和良好的工作环境。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter07/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../chapter07/02.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter07/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../chapter07/02.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/book-context-05123c47.js"></script>
+        <script src="../theme/reading-sections-6f49318a.js"></script>
+        <script src="../theme/section-editorial-notes-077f39ac.js"></script>
+        <script src="../standalone/gallery-data-51913a27.js"></script>
+        <script src="../standalone/gallery-730ec024.js"></script>
+        <script src="../theme/custom-26cf057f.js"></script>
+
+
+
+    </div>
+    </body>
+</html>
