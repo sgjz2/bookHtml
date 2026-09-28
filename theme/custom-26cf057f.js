@@ -301,7 +301,8 @@
     var path = window.location.pathname.replace(/\\/g, "/");
     var chapterMatch = path.match(/chapter(\d{2})\/(index|\d{2})\.html$/);
     var sectionMatch = chapterMatch && chapterMatch[2] !== "index" ? chapterMatch[2] : null;
-    var isHome = /\/index\.html$/.test(path) && !/chapter\d{2}\/index\.html$/.test(path);
+    var isHome = !!document.querySelector(".book-home") ||
+      (/\/index\.html$/.test(path) && !/chapter\d{2}\/index\.html$/.test(path));
     var isPreface = /\/preface\.html$/.test(path);
     var isReferences = /\/references\.html$/.test(path);
     return {

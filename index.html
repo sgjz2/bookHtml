@@ -92,7 +92,15 @@
         <script>
             let sidebar = null;
             const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
-            if (document.body.clientWidth >= 1080) {
+            const current_path = window.location.pathname.replace(/\\/g, "/");
+            const current_leaf = current_path.split("/").pop();
+            const is_home_entry = typeof path_to_root !== "undefined" &&
+                path_to_root === "" &&
+                (current_leaf === "" || current_leaf === "index.html");
+            if (is_home_entry) {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            } else if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
