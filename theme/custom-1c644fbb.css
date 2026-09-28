@@ -284,13 +284,13 @@ body {
 
 #mdbook-sidebar .chapter-link-wrapper a:hover {
   background: rgba(0, 72, 246, 0.08);
-  color: #0048F6;
+  color: #0752FF;
 }
 
 #mdbook-sidebar .chapter-link-wrapper a.active {
   background: rgba(0, 72, 246, 0.08);
-  border-left-color: #0048F6;
-  color: #0048F6;
+  border-left-color: #0752FF;
+  color: #0752FF;
 }
 
 #mdbook-sidebar strong[aria-hidden="true"] {
@@ -340,7 +340,7 @@ body {
 }
 
 #mdbook-sidebar .designbook-chapter-item > .chapter-link-wrapper a:hover .nav-chapter-title {
-  color: #0048F6;
+  color: #0752FF;
 }
 
 #mdbook-sidebar .section {
@@ -386,7 +386,7 @@ body {
 
 /* Sidebar selection: saturated blue rule with a restrained 8% wash. */
 #mdbook-sidebar .designbook-chapter-item > .chapter-link-wrapper a.active {
-  border-left-color: #0048F6;
+  border-left-color: #0752FF;
   background: rgba(0, 72, 246, 0.08);
 }
 
@@ -397,7 +397,7 @@ body {
 
 #mdbook-sidebar .designbook-section-item a.active::before,
 #mdbook-sidebar .designbook-section-item a.scrollspy-active::before {
-  background: #0048F6;
+  background: #0752FF;
 }
 
 #mdbook-sidebar .nav-section-title {
@@ -1663,13 +1663,13 @@ html.ayu #mdbook-search-wrapper:not(.hidden) {
 }
 
 #mdbook-sidebar .designbook-chapter-item > .chapter-link-wrapper a.active {
-  border-left: 2px solid #0048F6;
+  border-left: 2px solid #0752FF;
   background: rgba(0, 72, 246, 0.08);
   padding-left: 8px;
 }
 
 #mdbook-sidebar .designbook-chapter-item > .chapter-link-wrapper a.active .nav-chapter-number {
-  color: #0048F6;
+  color: #0752FF;
 }
 
 /* Simplified Chapter Cover system for Chapters 04–09. */
@@ -1761,12 +1761,12 @@ html.ayu #mdbook-search-wrapper:not(.hidden) {
 #mdbook-sidebar .designbook-section-item a.active,
 #mdbook-sidebar .designbook-section-item a.scrollspy-active {
   background: rgba(0, 72, 246, 0.08);
-  color: #0048F6;
+  color: #0752FF;
 }
 
 #mdbook-sidebar .designbook-section-item a.active::before,
 #mdbook-sidebar .designbook-section-item a.scrollspy-active::before {
-  background: #0048F6;
+  background: #0752FF;
 }
 
 body.book-home-page #mdbook-content.content > main {
@@ -4544,5 +4544,5 @@ body.book-home-page .book-explore-preview--gallery img:nth-child(3) { height: 61
 #mdbook-sidebar .nav-chapter-number,
 #mdbook-sidebar .designbook-chapter-item > .chapter-link-wrapper a:hover .nav-chapter-number,
 #mdbook-sidebar .designbook-chapter-item > .chapter-link-wrapper a.active .nav-chapter-number {
-  color: #0048F6;
+  color: #0752FF;
 }

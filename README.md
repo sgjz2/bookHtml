@@ -1,22 +1,17 @@
-# DesignBook Pages
+# The Meaning of Design — Immersive Reading V3
 
-This folder contains the complete static build of *The Meaning of Design*.
+This repository contains the complete static build of the immersive reading edition of *The Meaning of Design*.
 
-## Publish with GitHub Pages
+## Live Site
 
-1. Create a public GitHub repository named `design-art-book`.
-2. Upload the contents of this folder to the repository root.
-3. Open `Settings > Pages` in the repository.
-4. Under `Build and deployment`, select `Deploy from a branch`.
-5. Select the `main` branch and the `/(root)` folder, then save.
-6. Open `https://YOUR-USERNAME.github.io/design-art-book/` after deployment completes.
+[https://sgjz2.github.io/bookHtml/](https://sgjz2.github.io/bookHtml/)
 
-Upload the contents of this folder, not the folder itself and not only the ZIP file.
+## Deployment
 
-The `.nojekyll` file must remain in the repository root.
+GitHub Pages publishes the `main` branch from the repository root. The `.nojekyll` file must remain in the root directory.
 
 ## Update the site
 
-Rebuild the book, replace the published files with the latest `dist` output, and push the changes to GitHub.
+Replace the static files with the latest verified build, commit the changes, and push them to `main`.
 
 No server, Node runtime, CDN, or external API is required.

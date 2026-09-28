@@ -2020,7 +2020,7 @@
 
   function isCaptionText(value) {
     var text = (value || "").replace(/\s+/g, " ").trim();
-    return text && text.length <= 120 && !/[。！？；：,.!?;:]$/.test(text);
+    return text && text.length <= 60 && !/[。！？；!?;]/.test(text) && (text.match(/[，,]/g) || []).length < 2 && !/[：,.:]$/.test(text);
   }
 
   function normalizeFigureOrder() {
@@ -2051,7 +2051,7 @@
       }
 
       var previous = paragraph.previousElementSibling;
-      if (previous && !previous.querySelector("img") && !previous.classList.contains("figure-caption") &&
+      if (!paragraph.querySelector(".figure-caption-inline") && previous && previous.tagName === "P" && !previous.querySelector("img") && !previous.classList.contains("figure-caption") &&
         isCaptionText(previous.textContent)) {
         paragraph.parentNode.insertBefore(paragraph, previous);
         previous.classList.add("figure-caption");
@@ -2431,7 +2431,7 @@
         var next = paragraph.nextElementSibling;
         if (next && next.tagName === "P" && !next.querySelector("img")) {
           var caption = next.textContent.trim();
-          if (caption && caption.length <= 120) next.classList.add("figure-caption");
+          if (isCaptionText(caption)) next.classList.add("figure-caption");
         }
       }
     });

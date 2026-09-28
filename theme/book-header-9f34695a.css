@@ -1,0 +1,85 @@
+/* Shared contextual header for the two static alternative-reading pages.
+   The mdBook header keeps the same #mdbook-menu-bar contract; this class
+   supplies that contract to concept.html and timeline.html. */
+#mdbook-menu-bar.designbook-global-header {
+  position: sticky;
+  z-index: 1001;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  height: var(--global-header-height, 60px);
+  padding: 0 42px;
+  background: color-mix(in srgb, var(--book-paper, #f7f4ee) 95%, transparent);
+  border-bottom: 1px solid var(--book-rule, rgba(40, 38, 34, 0.14));
+  box-shadow: none;
+  backdrop-filter: blur(12px);
+}
+
+#mdbook-menu-bar.designbook-global-header .left-buttons,
+#mdbook-menu-bar.designbook-global-header .right-buttons {
+  display: flex;
+  align-items: center;
+  height: var(--global-header-height, 60px);
+  margin: 0;
+}
+
+#mdbook-menu-bar.designbook-global-header .book-context-return {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--book-muted, #7e766b);
+  font-family: var(--book-ui-font, ui-sans-serif, system-ui, sans-serif);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+#mdbook-menu-bar.designbook-global-header .book-context-return span {
+  color: var(--book-accent, #9d4f38);
+  font-family: var(--book-body-font, "PingFang SC", "苹方-简", sans-serif);
+  font-size: 21px;
+  line-height: 1;
+}
+
+#mdbook-menu-bar.designbook-global-header .book-context-return:hover,
+#mdbook-menu-bar.designbook-global-header .book-context-return:focus-visible {
+  color: var(--book-accent, #9d4f38);
+  transform: translateX(-2px);
+}
+
+#mdbook-menu-bar.designbook-global-header .menu-title {
+  display: block;
+  margin: 0;
+  color: var(--book-ink, #282622);
+  font-family: var(--book-ui-font, ui-sans-serif, system-ui, sans-serif);
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0.13em;
+  line-height: var(--global-header-height, 60px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+#mdbook-menu-bar.designbook-global-header .book-mode-label {
+  justify-self: end;
+  color: var(--book-muted, #7e766b);
+  font-family: var(--book-ui-font, ui-sans-serif, system-ui, sans-serif);
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  #mdbook-menu-bar.designbook-global-header { padding: 0 22px; }
+  #mdbook-menu-bar.designbook-global-header .book-mode-label { font-size: 9px; letter-spacing: 0.08em; }
+}
+
+@media (max-width: 520px) {
+  #mdbook-menu-bar.designbook-global-header { padding: 0 16px; }
+  #mdbook-menu-bar.designbook-global-header .menu-title { font-size: 11px; letter-spacing: 0.08em; }
+  #mdbook-menu-bar.designbook-global-header .book-mode-label { display: none; }
+}
