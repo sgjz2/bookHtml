@@ -1888,6 +1888,19 @@
     };
   }
 
+  function getChapterTarget(chapter, sections) {
+    var chapterTitle = getChapterTitle(chapter, sections);
+    var href = resolveBookHref("chapter" + chapter + "/index.html");
+    return {
+      type: "chapter",
+      chapter: chapter,
+      chapterTitle: chapterTitle,
+      sectionTitle: chapterTitle,
+      path: getBookPagePath(href),
+      href: href
+    };
+  }
+
   function getFooterNavigationData(info, sections) {
     var previous = null;
     var next = null;
@@ -1897,7 +1910,10 @@
 
     if (info.section && currentSectionIndex >= 0) {
       previous = currentSectionIndex > 0 ? sections[currentSectionIndex - 1] : getPrefaceTarget();
-      next = currentSectionIndex < sections.length - 1 ? sections[currentSectionIndex + 1] : null;
+      var nextSection = currentSectionIndex < sections.length - 1 ? sections[currentSectionIndex + 1] : null;
+      next = nextSection && nextSection.chapter !== info.chapter
+        ? getChapterTarget(nextSection.chapter, sections)
+        : nextSection;
     } else if (info.isChapterIndex) {
       var firstInChapter = sections.findIndex(function (section) { return section.chapter === info.chapter; });
       if (firstInChapter >= 0) {
