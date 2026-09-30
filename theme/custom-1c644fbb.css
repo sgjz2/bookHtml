@@ -416,6 +416,7 @@ body {
 /* Top bar: retain native mdBook controls while making them book UI. */
 #mdbook-menu-bar {
   position: sticky;
+  top: 0;
   z-index: 1001;
   height: var(--global-header-height);
   background: color-mix(in srgb, var(--book-paper) 95%, transparent);
@@ -3742,6 +3743,7 @@ body.book-home-page #mdbook-menu-bar-hover-placeholder {
   display: none;
 }
 
+body:has(.book-home) #mdbook-menu-bar,
 body.book-home-page #mdbook-menu-bar {
   position: fixed !important;
   top: 0 !important;
@@ -3751,6 +3753,7 @@ body.book-home-page #mdbook-menu-bar {
   margin: 0;
 }
 
+body:has(.book-home) .page,
 body.book-home-page .page {
   margin-block-start: var(--global-header-height);
 }
@@ -4492,6 +4495,18 @@ body.book-home-page .book-explore-preview--gallery img:nth-child(3) { height: 61
 
   .chapter-cover__copy { padding-left: 0; }
   .chapter-cover__visual { justify-self: start; }
+
+  .chapter-cover .chapter-cover__title--short,
+  .chapter-cover .chapter-cover__title--medium,
+  .chapter-cover .chapter-cover__title--long,
+  .chapter-cover__question {
+    max-width: 100%;
+    white-space: normal !important;
+    word-break: normal;
+    overflow-wrap: break-word;
+    line-break: strict;
+    text-wrap: balance;
+  }
 
   .chapter-cover--image-led .chapter-cover__copy,
   .chapter-cover--type-led .chapter-cover__copy,
