@@ -224,7 +224,7 @@
 
   function getPageInfo() {
     var path = window.location.pathname.replace(/\\/g, "/");
-    var chapterMatch = path.match(/chapter(\d{2})\/(index|\d{2})\.html$/);
+    var chapterMatch = path.match(/chapter(\d{2})\/(index|works|\d{2})\.html$/);
     var sectionMatch = chapterMatch && chapterMatch[2] !== "index" ? chapterMatch[2] : null;
     var isHome = /\/index\.html$/.test(path) && !/chapter\d{2}\/index\.html$/.test(path);
     var isPreface = /\/preface\.html$/.test(path);
@@ -1773,27 +1773,31 @@
   }
 
   function getFooterNavigationData(info, sections) {
-    var previous = null;
-    var next = null;
-    var currentSectionIndex = sections.findIndex(function (section) {
-      return section.path === getBookPagePath(window.location.href);
-    });
-
-    if (info.section && currentSectionIndex >= 0) {
-      previous = currentSectionIndex > 0 ? sections[currentSectionIndex - 1] : getPrefaceTarget();
-      next = currentSectionIndex < sections.length - 1 ? sections[currentSectionIndex + 1] : null;
-    } else if (info.isChapterIndex) {
-      var firstInChapter = sections.findIndex(function (section) { return section.chapter === info.chapter; });
-      if (firstInChapter >= 0) {
-        previous = firstInChapter > 0 ? sections[firstInChapter - 1] : getPrefaceTarget();
-        next = sections[firstInChapter];
+    // The published TOC is the single reading spine: include chapter openings
+    // and supplementary subchapters, not just the numeric body-section manifest.
+    var pages = getBookPages().map(function (page) {
+      var match = page.path.match(/chapter(\d{2})\/(index|works|\d{2})\.html$/);
+      if (match) {
+        var section = sections.find(function (item) { return item.path === page.path; });
+        return {
+          type: match[2] === "index" ? "chapter" : "section",
+          chapter: match[1],
+          chapterTitle: getChapterTitle(match[1], sections),
+          sectionTitle: section ? section.sectionTitle : page.label,
+          path: page.path,
+          href: page.href
+        };
       }
-    } else if (info.isPreface) {
-      previous = getCoverTarget();
-      next = sections[0] || null;
-    } else if (info.isReferences) {
-      previous = sections.length ? sections[sections.length - 1] : null;
-    }
+      if (/\/preface\.html$/.test(page.path)) return getPrefaceTarget();
+      if (/\/references\.html$/.test(page.path)) return {type:"section",sectionTitle:"参考文献",path:page.path,href:page.href};
+      if (isBookHomeHref(page.href)) return getCoverTarget();
+      return null;
+    }).filter(Boolean);
+    var currentIndex = pages.findIndex(function (page) {
+      return page.path === getBookPagePath(window.location.href);
+    });
+    var previous = currentIndex > 0 ? pages[currentIndex - 1] : null;
+    var next = currentIndex >= 0 && currentIndex < pages.length - 1 ? pages[currentIndex + 1] : null;
 
     var chapterTitle = info.chapter ? getChapterTitle(info.chapter, sections) : "";
     var eyebrow = info.chapter ? "CHAPTER " + info.chapter : (info.isPreface ? "PREFACE" : "REFERENCES");

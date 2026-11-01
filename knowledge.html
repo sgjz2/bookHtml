@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>知识星空｜设计艺术的含义</title>
+  <link rel="stylesheet" href="knowledge.css">
+</head>
+<body>
+  <header class="star-header"><a href="index.html" class="back-link">← 返回书籍</a><a href="index.html" class="book-title">设计艺术的含义</a><span class="header-note">赵江洪 著</span></header>
+  <div class="atlas-intro">
+    <div class="star-heading"><p class="eyebrow">设计艺术的含义 / KNOWLEDGE ATLAS</p><h1>循星，读懂设计。</h1><p>从九章出发，走近书中的概念、人物与作品。</p><span id="atlas-count" class="atlas-count"></span></div>
+    <div class="search-shell"><label class="search-field"><span class="sr-only">搜索知识点</span><input id="atlas-search" type="search" autocomplete="off" placeholder="搜索知识点，例如：包豪斯"></label><div id="search-results" class="search-results" hidden aria-label="搜索结果"></div></div>
+  </div>
+  <main id="atlas-workspace" class="star-workspace">
+    <section id="map-stage" class="star-stage is-nebula" aria-label="全书星云与按原文章节组织的二维知识星群">
+      <div class="nebula-mist" aria-hidden="true"></div>
+      <canvas id="knowledge-canvas" tabindex="0" aria-label="拖动平移地图，滚轮缩放。点击空白或按 Esc 取消选择，方向键平移，加减号缩放，Home 复位。也可通过搜索和节点目录选择知识点。" aria-describedby="map-instructions"></canvas>
+      <div class="view-heading"><span class="view-dot" aria-hidden="true"></span><p id="view-level" class="view-level">远景 · 九章星群 · 点击进入</p></div>
+      <button id="nebula-toggle" class="nebula-toggle" aria-pressed="true">展开章节 ↗</button>
+      <div id="nebula-caption" class="nebula-caption"><p>九章，汇成一片银河。</p><span>三维旋转 · 悬停停驻 · 点击走进书中</span></div>
+      <div class="map-controls" aria-label="视图控制"><button id="zoom-out" aria-label="缩小">−</button><button id="zoom-in" aria-label="放大">+</button><button id="fit-map">全书</button></div>
+      <div class="star-bottom"><div id="map-legend" class="map-legend" aria-label="章节颜色与跳转"></div><p id="map-instructions">○ 人物　● 其他类型<br>悬停类型与名称 · 拖动平移 · 滚轮／双指缩放 · 空白取消 <a id="detail-jump" href="#knowledge-detail" hidden>查看解释 ↓</a></p></div>
+    </section>
+    <aside class="star-sidebar" aria-label="搜索、筛选与原文证据">
+      <div class="sidebar-top"><span>阅读线索</span><button id="list-toggle" aria-expanded="false" aria-controls="node-list">全部知识点</button></div>
+      <details id="atlas-filters" class="atlas-filters">
+        <summary>筛选与显示 <span id="visible-count"></span></summary>
+        <div id="type-filters" class="type-filters" aria-label="知识点类型筛选"></div>
+        <label class="chapter-field"><span>原文范围</span><select id="atlas-chapter"><option value="">全书</option></select></label>
+        <label class="check-field"><input type="checkbox" id="show-explicit" checked> 原文明示关系 <span id="explicit-count"></span></label>
+        <label class="check-field"><input type="checkbox" id="show-cooccurrence"> 同段共现 <span class="soft-label">不代表因果</span></label>
+        <label class="check-field"><input type="checkbox" id="selected-only" checked> 仅展开所选节点的连线</label>
+      </details>
+      <section id="node-list" class="node-list" hidden aria-label="全部知识点"></section>
+      <section id="knowledge-detail" class="knowledge-detail" tabindex="-1" aria-label="知识点解释与原文"></section>
+      <footer class="evidence-note"><span class="evidence-mark">原文可追溯</span><p>颜色与编号对应章节，同节知识自然聚集。位置沿原文组织，不表示因果。连线只来自书中证据；“同段共现”默认关闭，不表示影响或因果。</p><a href="knowledge-evidence.html">查看关系证据清单 ↗</a></footer>
+    </aside>
+  </main>
+  <p class="sr-only" id="atlas-status" role="status" aria-live="polite"></p>
+  <noscript><p class="noscript">请启用 JavaScript 探索星空，或<a href="index.html">返回书籍目录</a>。</p></noscript>
+  <script src="knowledge-data.js"></script>
+  <script src="knowledge.js"></script>
+</body>
+</html>

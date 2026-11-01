@@ -1,17 +1,22 @@
-# The Meaning of Design — Immersive Reading V3
+# 设计艺术的含义 · 沉浸阅读版
 
-This repository contains the complete static build of the immersive reading edition of *The Meaning of Design*.
+[在线阅读](https://sgjz2.github.io/bookHtml/) · [知识星空](https://sgjz2.github.io/bookHtml/knowledge.html)
 
-## Live Site
+本仓库存放完整的静态网页发布版，可在线阅读，也可下载后打开 index.html 离线阅读。
 
-[https://sgjz2.github.io/bookHtml/](https://sgjz2.github.io/bookHtml/)
+## 本次更新（2026-11-01）
 
-## Deployment
+- 更新首页、阅读导航、章节目录和专题入口的版式与交互。
+- 新增三维旋转银河与二维章节知识地图，共 189 个知识点。
+- 提供 140 条有原书依据的类型化关联，其中 55 条跨章关联；点选查看解释、关联类型与原文证据，并跳转原文。
+- 星云与章节地图共用内容侧栏；点击空白或按 Esc 取消选择。
+- 人物为空心圆，其余类型为实心圆，颜色表示章节。
+- 第二章加入两份课程作品，保留原始标题，支持 PDF 预览与下载。本次已确认公开。
 
-GitHub Pages publishes the `main` branch from the repository root. The `.nojekyll` file must remain in the root directory.
+## 发布与维护
 
-## Update the site
+GitHub Pages 从 main 分支的仓库根目录发布，必须保留 .nojekyll。
+修改在本地源项目维护，验证后同步静态产物，再提交到此仓库。
+读者无需安装 Node，也不依赖外部 API。
 
-Replace the static files with the latest verified build, commit the changes, and push them to `main`.
-
-No server, Node runtime, CDN, or external API is required.
+知识星空的连线以原文证据为准；位置用于阅读编排，不表示因果或知识距离。同段共现默认关闭。
