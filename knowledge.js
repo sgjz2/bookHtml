@@ -168,7 +168,7 @@
   function schedule(){if(!frame)frame=requestAnimationFrame(draw);}
   function setNebula(value){
     if(nebulaMode===value)return;nebulaMode=value;hovered=hoveredEdge=null;
-    $('nebula-toggle').textContent=value?'展开章节 ↗':'返回星云';$('nebula-toggle').setAttribute('aria-pressed',String(value));
+    $('nebula-toggle').textContent=value?'展开章节':'返回星云';$('nebula-toggle').setAttribute('aria-pressed',String(value));
     stage.classList[value?'add':'remove']('is-nebula');$('nebula-caption').hidden=!value;
     if(motion.matches){nebulaAmount=value?1:0;nebulaTransition=null;}else nebulaTransition={from:nebulaAmount,to:value?1:0,start:null};schedule();
   }
@@ -386,9 +386,9 @@
   function showWelcome(){
     detail.replaceChildren();relationCards.clear();detail.append(el('p','detail-kicker','从星点，回到书页'),el('h2','welcome-title','选一颗星，读到原文。'),el('p','welcome-text','同章知识形成一片星群，颜色标明主要论述章节。悬停看类型与名称，点选查看解释、章内与跨章联系；点击空白或按 Esc 取消选择。'));
     detail.append(el('p','welcome-label','不妨从这里开始'));
-    for(const id of ['bauhaus','skin','high-design']){const node=model.byId.get(id),button=el('button','welcome-button',node.label+'  ↗');button.type='button';button.addEventListener('click',()=>selectNode(id,true));detail.append(button);}
+    for(const id of ['bauhaus','skin','high-design']){const node=model.byId.get(id),button=el('button','welcome-button',node.label+'  ↗︎');button.type='button';button.addEventListener('click',()=>selectNode(id,true));detail.append(button);}
     const chapters=el('details','chapter-directory');chapters.append(el('summary','','按章节浏览'));
-    for(const group of layout.groups){const button=el('button','welcome-button',group.title+' ↗');button.type='button';button.addEventListener('click',()=>focusGroup(group.id));chapters.append(button);}detail.append(chapters);
+    for(const group of layout.groups){const button=el('button','welcome-button',group.title+' ↗︎');button.type='button';button.addEventListener('click',()=>focusGroup(group.id));chapters.append(button);}detail.append(chapters);
     $('detail-jump').hidden=true;
   }
   function focusGroup(id){
@@ -400,13 +400,13 @@
     detail.replaceChildren();detail.append(el('p','detail-kicker','章节 / 原文导航'),el('h2','',group.title),el('p','detail-note','沿着星点走近一个知识点，查看它的解释、原文和关系证据。也可以从下方名称直接进入。'));
     const ids=new Set(available().map(node=>node.id)),members=group.members.filter(node=>ids.has(node.id));
     detail.append(el('p','welcome-label',members.length+' 个知识点'));
-    for(const node of members){const button=el('button','welcome-button',node.label+' ↗');button.type='button';button.addEventListener('click',()=>selectNode(node.id,true));detail.append(button);}
-    const original=el('a','original-link','阅读本章原文 ↗');original.href='chapter'+group.id+'/index.html';original.style.backgroundColor=chapterInk(group.id);detail.append(original);
+    for(const node of members){const button=el('button','welcome-button',node.label+' ↗︎');button.type='button';button.addEventListener('click',()=>selectNode(node.id,true));detail.append(button);}
+    const original=el('a','original-link','阅读本章原文 ↗︎');original.href='chapter'+group.id+'/index.html';original.style.backgroundColor=chapterInk(group.id);detail.append(original);
     $('atlas-filters').open=false;announce('正在展开'+group.title+'，共'+members.length+'个知识点。');
   }
   function proofDetails(proof,label='原文证据'){
     const details=el('details','source-details'),summary=el('summary','',label);details.append(summary,el('blockquote','proof-quote',proof.quote));
-    const link=el('a','proof-link',proof.title+' · 定位原文 ↗');link.href=proof.href;details.append(link);return details;
+    const link=el('a','proof-link',proof.title+' · 定位原文 ↗︎');link.href=proof.href;details.append(link);return details;
   }
   function showDetail(){
     if(!selected){showWelcome();return;}
@@ -414,16 +414,16 @@
     detail.replaceChildren();relationCards.clear();const kicker=el('p','detail-kicker',layout.groups.find(group=>group.id===node.chapter).title+' · '+type.label);kicker.style.color=chapterColor(node.chapter);detail.append(kicker,el('h2','',node.label));
     if(node.note)detail.append(el('p','detail-note',node.note));
     detail.append(el('p','detail-label',node.note?'原文依据':'原文中的说明'),el('blockquote','detail-quote',node.excerpt));
-    const original=el('a','original-link');original.href=data.evidence[node.primary].href;original.style.backgroundColor=chapterInk(node.chapter);original.append(el('span','','阅读这段原文'),el('span','','↗'));detail.append(original);detail.append(el('p','source-title',data.evidence[node.primary].title));
+    const original=el('a','original-link');original.href=data.evidence[node.primary].href;original.style.backgroundColor=chapterInk(node.chapter);original.append(el('span','','阅读这段原文'),el('span','','↗︎'));detail.append(original);detail.append(el('p','source-title',data.evidence[node.primary].title));
     detail.append(proofDetails(data.evidence[node.primary],'展开完整原文段落'));
     if(proof.id!==node.primary)detail.append(proofDetails(proof,'当前章节中的原文'));
     const other=node.evidence.filter(id=>id!==node.primary&&id!==proof.id);
-    if(other.length){const sources=el('details','source-details');sources.append(el('summary','','更多出处 · '+other.length+' 段'));for(const id of other){const p=data.evidence[id],link=el('a','',p.title+' ↗');link.href=p.href;sources.append(link);}detail.append(sources);}
+    if(other.length){const sources=el('details','source-details');sources.append(el('summary','','更多出处 · '+other.length+' 段'));for(const id of other){const p=data.evidence[id],link=el('a','',p.title+' ↗︎');link.href=p.href;sources.append(link);}detail.append(sources);}
     const related=model.related(node.id,includeCo());
     const relationHost=detail;
     detail.append(el('h3','relations-title','有证据的关联 · '+related.length));
     if(related.some(item=>item.edge.kind==='explicit')){
-      const navigation=el('div','relation-navigation'),overview=el('button','','查看关联分布 ↗'),close=el('button','','近看知识点');overview.type=close.type='button';
+      const navigation=el('div','relation-navigation'),overview=el('button','','查看关联分布 ↗︎'),close=el('button','','近看知识点');overview.type=close.type='button';
       overview.addEventListener('click',()=>{hovered=hoveredEdge=null;chapter='';chapterSelect.value='';data.types.forEach(type=>activeTypes.add(type.id));syncTypes();updateCount();transitionTo(initialCamera(),420);schedule();});close.addEventListener('click',()=>{setNebula(false);selectNode(node.id,true);});navigation.append(overview,close);detail.append(navigation,el('p','relation-hint','默认最多展开所选节点的 10 条明示联系，完整关系列在下方。实线与箭头表示方向，虚线用于对比或批评；悬停连线看说明，点击查看证据。'));
     }
     if(!related.length)detail.append(el('p','no-relations','这个节点暂无已逐条核对的明示关系。可在“筛选与显示”中打开“同段共现”，查看与它在原文同段出现的其他知识点。'));
@@ -431,7 +431,7 @@
     for(const item of related){
       const section=item.edge.kind!=='explicit'?'原文同段出现':item.edge.crossChapter?'跨章节联系':'本章联系';
       if(section!==previousSection){relationHost.append(el('h4','relation-section',section+' · '+related.filter(other=>(other.edge.kind!=='explicit'?'原文同段出现':other.edge.crossChapter?'跨章节联系':'本章联系')===section).length));previousSection=section;}
-      const card=el('article','relation-card'),button=el('button','relation-target');button.type='button';button.append(el('span','',item.node.label),el('span','','↗'));button.addEventListener('click',()=>selectNode(item.node.id,true));
+      const card=el('article','relation-card'),button=el('button','relation-target');button.type='button';button.append(el('span','',item.node.label),el('span','','↗︎'));button.addEventListener('click',()=>selectNode(item.node.id,true));
       button.style.color=chapterInk(item.node.chapter);
       const statement=item.edge.kind==='explicit'?model.byId.get(item.edge.source).label+(item.edge.directed?' → ':' ↔ ')+model.byId.get(item.edge.target).label+' · '+item.edge.label:'文本事实 · 原文同段出现';
       const meta=el('p','relation-meta');meta.append(el('span','relation-type',relationName(item.edge)),el('span','relation-chapter',layout.positions.get(item.node.id).group.title));
@@ -440,7 +440,7 @@
       let loaded=false;
       evidence.addEventListener('toggle',()=>{
         if(!evidence.open||loaded)return;loaded=true;
-        for(const id of item.edge.evidence){const p=data.evidence[id],quote=el('blockquote','proof-quote'),focus=item.edge.evidenceFocus?.[id],at=focus?p.quote.indexOf(focus):-1;if(at>=0)quote.append(el('span','',p.quote.slice(0,at)),el('mark','',focus),el('span','',p.quote.slice(at+focus.length)));else quote.textContent=p.quote;evidence.append(quote);const link=el('a','proof-link',p.title+' · 定位原文 ↗');link.href=p.href;evidence.append(link,el('p','proof-source','源文件 '+p.source+' · 第 '+p.line+' 行'));}
+        for(const id of item.edge.evidence){const p=data.evidence[id],quote=el('blockquote','proof-quote'),focus=item.edge.evidenceFocus?.[id],at=focus?p.quote.indexOf(focus):-1;if(at>=0)quote.append(el('span','',p.quote.slice(0,at)),el('mark','',focus),el('span','',p.quote.slice(at+focus.length)));else quote.textContent=p.quote;evidence.append(quote);const link=el('a','proof-link',p.title+' · 定位原文 ↗︎');link.href=p.href;evidence.append(link,el('p','proof-source','源文件 '+p.source+' · 第 '+p.line+' 行'));}
       });
       card.append(evidence);relationHost.append(card);
       relationCards.set(item.edge.id,{card,evidence});

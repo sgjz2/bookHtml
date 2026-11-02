@@ -62,7 +62,7 @@
             </section>
           </article>`;
       }).join('')}
-      <p class="course-afterword">本地展示样本 · 章节归属、学年与署名待确认。</p>`;
+      `;
     main.replaceChildren(archive);
     archive.querySelectorAll('[data-preview]').forEach(function (button) {
       button.addEventListener('click', function () {

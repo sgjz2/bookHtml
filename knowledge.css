@@ -31,3 +31,6 @@ canvas{position:relative;z-index:1}.view-heading,.star-bottom,.nebula-caption{z-
 @media(max-width:650px){.nebula-mist{inset:27% 5% 39%}}
 .nebula-caption{top:65px;bottom:auto;left:25px;right:auto;max-width:300px;text-align:left}.nebula-caption p{font-size:20px;letter-spacing:.03em}.nebula-caption span{font-size:12px}
 @media(max-width:650px){.nebula-caption{top:87px;left:20px;max-width:250px;bottom:auto}.nebula-caption p{font-size:18px}}
+
+/* Draw the mode arrow with borders so mobile systems cannot substitute emoji. */
+.nebula-toggle{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}.nebula-toggle[aria-pressed="true"]::after{content:"";width:9px;height:9px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;box-sizing:border-box;transform:translateY(1px);background:linear-gradient(135deg,transparent 44%,currentColor 45%,currentColor 55%,transparent 56%)}

@@ -17,6 +17,13 @@
       toolbarLink.appendChild(toolbarIcon); toolbarLink.appendChild(toolbarLabel);
       gallery.insertAdjacentElement('afterend', toolbarLink);
     }
+    var intro = document.querySelector('.reading-intro');
+    if (intro) {
+      var count = intro.querySelector('p');
+      var description = intro.querySelector('div');
+      if (count) count.textContent = '一本书，四个入口。';
+      if (description) description.textContent = '循着概念理解，沿着时间追溯，从图像发现线索，或走进知识星空。';
+    }
     var grid = pathways && pathways.querySelector('.book-explore-by__grid');
     if (grid && !grid.querySelector('.book-knowledge-card')) {
       function span(className, text) {
