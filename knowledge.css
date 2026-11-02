@@ -34,3 +34,6 @@ canvas{position:relative;z-index:1}.view-heading,.star-bottom,.nebula-caption{z-
 
 /* Draw the mode arrow with borders so mobile systems cannot substitute emoji. */
 .nebula-toggle{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}.nebula-toggle[aria-pressed="true"]::after{content:"";width:9px;height:9px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;box-sizing:border-box;transform:translateY(1px);background:linear-gradient(135deg,transparent 44%,currentColor 45%,currentColor 55%,transparent 56%)}
+
+/* Reserve a separate control strip; panning never paints beneath it. */
+#knowledge-canvas{height:calc(100% - 64px)}.star-bottom,.view-heading,#nebula-caption{display:none!important}.map-controls{bottom:14px;right:18px;flex-wrap:nowrap;max-width:none}.map-controls button:last-child{width:auto;border-top:0;border-left:1px solid var(--line);height:34px}.map-controls button{height:34px}.star-stage::after{content:"";position:absolute;left:0;right:0;bottom:0;height:63px;background:#fafbfe;border-top:1px solid var(--line);pointer-events:none;z-index:2}.map-controls{z-index:3}

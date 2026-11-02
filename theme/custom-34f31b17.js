@@ -69,7 +69,7 @@
     "04": {
       title: "科学与艺术的“边缘”",
       family: "relational-split",
-      english: "SCIENCE ↔ ART",
+      english: "SCIENCE ↔︎ ART",
       question: "科学与艺术如何同时存在于设计中？",
       keywords: ["设计科学", "设计艺术", "式样", "工程"],
       imageSrc: "../images/b3de8ca01e5681eeab86780bb6d498342c9aa0fb0cf197e008581111f65715ae.jpg",
@@ -500,9 +500,9 @@
     diagram.setAttribute("role", "img");
     diagram.setAttribute("aria-label", "人、物与生活之间的关系");
     diagram.appendChild(createChapterCoverNode("chapter-cover__life-node", "HUMAN"));
-    diagram.appendChild(createChapterCoverNode("chapter-cover__life-link", "↕"));
+    diagram.appendChild(createChapterCoverNode("chapter-cover__life-link", "↕︎"));
     diagram.appendChild(createChapterCoverNode("chapter-cover__life-node chapter-cover__life-node--accent", "OBJECT"));
-    diagram.appendChild(createChapterCoverNode("chapter-cover__life-link", "↕"));
+    diagram.appendChild(createChapterCoverNode("chapter-cover__life-link", "↕︎"));
     diagram.appendChild(createChapterCoverNode("chapter-cover__life-node", "LIFE"));
     return diagram;
   }
@@ -875,10 +875,10 @@
         '<h3>设计师的角色变化</h3><p class="chapter-experience__intro">设计与制造分离之后，设计师如何把意图交给协作网络？</p>' +
         '<div class="designer-role-diagram" role="group" aria-label="选择传统工匠或现代设计师的工作关系"><div class="designer-role-diagram__selector"><span>ROLE SHIFT</span><button type="button" data-role-choice="craft" aria-pressed="true">传统工匠</button><button type="button" data-role-choice="modern" aria-pressed="false">现代设计师</button></div>' +
         '<div class="designer-role-diagram__panels" aria-live="polite"><div data-role-panel="craft"><div class="designer-role-diagram__flow designer-role-diagram__flow--single"><span>意图</span><i>↓</i><strong>设计与制作</strong><small>一人贯通</small></div><p>传统工匠在实践中把设计与制作结合在一起。</p></div>' +
-        '<div data-role-panel="modern" hidden><div class="designer-role-diagram__flow designer-role-diagram__flow--network"><span>委托方</span><b>↔</b><strong>设计师</strong><b>↔</b><span>工程师</span><i>↓</i><span>企业</span><b>→</b><span>制造</span></div><p>现代设计师通过图纸、模型和沟通，与委托方、工程师及制造环节协作。</p></div></div></div>';
+        '<div data-role-panel="modern" hidden><div class="designer-role-diagram__flow designer-role-diagram__flow--network"><span>委托方</span><b>↔︎</b><strong>设计师</strong><b>↔︎</b><span>工程师</span><i>↓</i><span>企业</span><b>→</b><span>制造</span></div><p>现代设计师通过图纸、模型和沟通，与委托方、工程师及制造环节协作。</p></div></div></div>';
     } else if (info.chapter === "04" && info.section === "01") {
       placementAfterText = "设计不等于科学加艺术的简单";
-      markup = '<p class="chapter-experience__eyebrow">SCIENCE ↔ ART</p><h3>设计在科学与艺术之间</h3>' +
+      markup = '<p class="chapter-experience__eyebrow">SCIENCE ↔︎ ART</p><h3>设计在科学与艺术之间</h3>' +
         '<p class="chapter-experience__intro">移动 DESIGN，观察两种观察角度如何改变；设计并不归入其中一端。</p>' +
         '<div class="design-spectrum"><div class="design-spectrum__ends"><span>SCIENCE<br><b>科学</b></span><span>ART<br><b>艺术</b></span></div>' +
         '<input type="range" min="0" max="100" value="50" aria-label="在科学与艺术的观察角度之间移动 DESIGN" class="design-spectrum__range">' +
@@ -906,13 +906,13 @@
         '<div class="material-explorer__panel" aria-live="polite"><span>NATURE · 自然材料</span><p>木、石等自然材料与人的加工经验和情感关系密切。</p><ul class="material-explorer__effects"><li>加工方式</li><li>表面体验</li><li>重量感</li><li>造型语言</li><li>人与技术的关系</li></ul><a href="chapter06/index.html">阅读本章 →</a></div></div>';
     } else if (info.isChapterIndex && info.chapter === "07") {
       placementAfterText = "意味着一大堆产品和一个完整的生活系统";
-      markup = '<p class="chapter-experience__eyebrow">HUMAN ↔ OBJECT ↔ LIFE</p><h3>我们设计物，物也设计我们</h3>' +
+      markup = '<p class="chapter-experience__eyebrow">HUMAN ↔︎ OBJECT ↔︎ LIFE</p><h3>我们设计物，物也设计我们</h3>' +
         '<div class="life-cycle"><div class="life-cycle__diagram" aria-label="人、物、家庭与机器构成循环关系">' +
         '<button type="button" class="life-cycle__node life-cycle__node--human" data-life="human" data-target="chapter07/01.html" aria-pressed="true">人<small>HUMAN</small></button>' +
         '<button type="button" class="life-cycle__node life-cycle__node--object" data-life="object" data-target="chapter07/03.html" aria-pressed="false">物<small>OBJECT</small></button>' +
         '<button type="button" class="life-cycle__node life-cycle__node--family" data-life="family" data-target="chapter07/01.html" aria-pressed="false">家庭<small>FAMILY</small></button>' +
         '<button type="button" class="life-cycle__node life-cycle__node--machine" data-life="machine" data-target="chapter07/02.html" aria-pressed="false">机器<small>MACHINE</small></button>' +
-        '<i class="life-cycle__arrow life-cycle__arrow--one" aria-hidden="true">↘</i><i class="life-cycle__arrow life-cycle__arrow--two" aria-hidden="true">↙</i><i class="life-cycle__arrow life-cycle__arrow--three" aria-hidden="true">↖</i><i class="life-cycle__arrow life-cycle__arrow--four" aria-hidden="true">↗</i></div>' +
+        '<i class="life-cycle__arrow life-cycle__arrow--one" aria-hidden="true">↘︎</i><i class="life-cycle__arrow life-cycle__arrow--two" aria-hidden="true">↙︎</i><i class="life-cycle__arrow life-cycle__arrow--three" aria-hidden="true">↖︎</i><i class="life-cycle__arrow life-cycle__arrow--four" aria-hidden="true">↗︎</i></div>' +
         '<div class="life-cycle__detail" aria-live="polite"><p>工具是人们想象世界与实际物质世界之间的桥梁。</p><a href="chapter07/01.html">读第一节 →</a></div></div>';
     } else if (info.chapter === "08" && info.section === "01") {
       placementAfterText = "高设计研究是对设计的价值和产品的价值的更加深入的研究";

@@ -169,7 +169,7 @@
   function setNebula(value){
     if(nebulaMode===value)return;nebulaMode=value;hovered=hoveredEdge=null;
     $('nebula-toggle').textContent=value?'展开章节':'返回星云';$('nebula-toggle').setAttribute('aria-pressed',String(value));
-    stage.classList[value?'add':'remove']('is-nebula');$('nebula-caption').hidden=!value;
+    stage.classList[value?'add':'remove']('is-nebula');$('nebula-caption').hidden=true;
     if(motion.matches){nebulaAmount=value?1:0;nebulaTransition=null;}else nebulaTransition={from:nebulaAmount,to:value?1:0,start:null};schedule();
   }
   function transitionTo(target,duration=260){if(motion.matches){camera=target;cameraTransition=null;}else cameraTransition={from:{...camera},to:target,start:null,duration};schedule();}
@@ -177,7 +177,7 @@
   function includeCo(){return $('show-cooccurrence').checked;}
   function proofFor(node){return (chapter&&node.evidence.map(id=>data.evidence[id]).find(p=>p.chapter===chapter))||data.evidence[node.primary];}
   function updateCount(){const count=available().length;$('visible-count').textContent=count+'/'+data.nodes.length;return count;}
-  function resize(){width=stage.clientWidth;height=stage.clientHeight;const ratio=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(width*ratio);canvas.height=Math.round(height*ratio);ctx.setTransform(ratio,0,0,ratio,0,0);schedule();}
+  function resize(){width=stage.clientWidth;height=stage.clientHeight-64;const ratio=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(width*ratio);canvas.height=Math.round(height*ratio);ctx.setTransform(ratio,0,0,ratio,0,0);schedule();}
   function draw(time){
     if(lastGalaxyTime!==null&&nebulaMode&&!selected&&!hovered&&!drag&&!motion.matches&&!document.hidden)galaxyRotation+=Math.min(48,time-lastGalaxyTime)*.00011;
     lastGalaxyTime=time;
@@ -384,7 +384,7 @@
   function zoom(factor,point={x:width/2,y:viewFrame(width,height).cy}){setNebula(false);hovered=null;canvas.style.cursor='grab';transitionTo(zoomCamera(cameraTransition?cameraTransition.to:camera,factor,point,width,height),220);}
   function syncTypes(){document.querySelectorAll('[data-node-type]').forEach(button=>button.setAttribute('aria-pressed',String(activeTypes.has(button.dataset.nodeType))));}
   function showWelcome(){
-    detail.replaceChildren();relationCards.clear();detail.append(el('p','detail-kicker','从星点，回到书页'),el('h2','welcome-title','选一颗星，读到原文。'),el('p','welcome-text','同章知识形成一片星群，颜色标明主要论述章节。悬停看类型与名称，点选查看解释、章内与跨章联系；点击空白或按 Esc 取消选择。'));
+    detail.replaceChildren();relationCards.clear();detail.append(el('p','detail-kicker','从星点，回到书页'),el('h2','welcome-title','选一颗星，读到原文。'));
     detail.append(el('p','welcome-label','不妨从这里开始'));
     for(const id of ['bauhaus','skin','high-design']){const node=model.byId.get(id),button=el('button','welcome-button',node.label+'  ↗︎');button.type='button';button.addEventListener('click',()=>selectNode(id,true));detail.append(button);}
     const chapters=el('details','chapter-directory');chapters.append(el('summary','','按章节浏览'));
@@ -433,7 +433,7 @@
       if(section!==previousSection){relationHost.append(el('h4','relation-section',section+' · '+related.filter(other=>(other.edge.kind!=='explicit'?'原文同段出现':other.edge.crossChapter?'跨章节联系':'本章联系')===section).length));previousSection=section;}
       const card=el('article','relation-card'),button=el('button','relation-target');button.type='button';button.append(el('span','',item.node.label),el('span','','↗︎'));button.addEventListener('click',()=>selectNode(item.node.id,true));
       button.style.color=chapterInk(item.node.chapter);
-      const statement=item.edge.kind==='explicit'?model.byId.get(item.edge.source).label+(item.edge.directed?' → ':' ↔ ')+model.byId.get(item.edge.target).label+' · '+item.edge.label:'文本事实 · 原文同段出现';
+      const statement=item.edge.kind==='explicit'?model.byId.get(item.edge.source).label+(item.edge.directed?' → ':' ↔︎ ')+model.byId.get(item.edge.target).label+' · '+item.edge.label:'文本事实 · 原文同段出现';
       const meta=el('p','relation-meta');meta.append(el('span','relation-type',relationName(item.edge)),el('span','relation-chapter',layout.positions.get(item.node.id).group.title));
       card.append(button,meta,el('p','relation-label '+item.edge.kind,statement));
       const evidence=el('details');evidence.append(el('summary','','查看原文证据 · '+item.edge.evidence.length+' 段'));

@@ -2409,7 +2409,7 @@ body.book-home-page .book-explore-by__item--primary .book-explore-by__link {
 
 .chapter-cross-links__list { display: flex; flex-wrap: wrap; gap: 7px 14px; }
 .chapter-cross-links__list a { color: var(--book-muted) !important; font-family: var(--book-ui-font); font-size: 10px; text-decoration: none; }
-.chapter-cross-links__list a::after { content: " ↗"; color: var(--book-accent); }
+.chapter-cross-links__list a::after { content: " ↗︎"; color: var(--book-accent); }
 .chapter-cross-links__list a:hover { color: var(--book-accent) !important; }
 
 /* One small, keyboard-operable content interaction per chapter. */
