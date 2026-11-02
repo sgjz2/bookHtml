@@ -37,3 +37,5 @@ canvas{position:relative;z-index:1}.view-heading,.star-bottom,.nebula-caption{z-
 
 /* Reserve a separate control strip; panning never paints beneath it. */
 #knowledge-canvas{height:calc(100% - 64px)}.star-bottom,.view-heading,#nebula-caption{display:none!important}.map-controls{bottom:14px;right:18px;flex-wrap:nowrap;max-width:none}.map-controls button:last-child{width:auto;border-top:0;border-left:1px solid var(--line);height:34px}.map-controls button{height:34px}.star-stage::after{content:"";position:absolute;left:0;right:0;bottom:0;height:63px;background:#fafbfe;border-top:1px solid var(--line);pointer-events:none;z-index:2}.map-controls{z-index:3}
+
+@media(max-width:800px){.star-stage{height:clamp(440px,125vw,520px);min-height:0}.star-workspace{min-height:0}}

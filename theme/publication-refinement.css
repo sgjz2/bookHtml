@@ -266,3 +266,16 @@
 .concept-preview__relation{font-size:0!important;position:relative;display:inline-block;width:22px;height:18px;background:linear-gradient(currentColor,currentColor) center/20px 1.5px no-repeat;color:#0752ff}.concept-preview__relation::before,.concept-preview__relation::after{content:"";position:absolute;width:6px;height:6px;top:5px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor}.concept-preview__relation::before{left:1px;transform:rotate(-135deg)}.concept-preview__relation::after{right:1px;transform:rotate(45deg)}
 
 #mdbook-menu-bar-hover-placeholder{display:block!important;position:static!important;height:var(--global-header-height,68px)!important;width:100%!important;pointer-events:none}
+
+/* Center each relation in its own grid track, between the circle centers. */
+body.book-home-page .concept-preview__relation{justify-self:center;align-self:center;vertical-align:middle;margin:0!important}
+/* Use the publication's neutral palette throughout search, including the empty footer. */
+#mdbook-search-wrapper:not(.hidden){background:rgba(245,245,247,.94);backdrop-filter:blur(8px)}
+.book-search-panel{background:#fff;color:#1d1d1f;border:1px solid #e5e5ea;box-shadow:0 12px 32px #1d1d1f0a;font-family:var(--book-ui-font)}
+.book-search-panel__title,.book-search-panel__hint,.book-search-panel__examples,#mdbook-searchbar,#mdbook-searchresults-outer{font-family:var(--book-ui-font)!important}
+.book-search-panel .book-search-panel__empty{display:none!important}
+.book-search-panel #mdbook-searchbar{box-sizing:border-box;border:1px solid #dedee5;border-radius:12px;background:#f5f5f7;box-shadow:none;color:#1d1d1f}
+.book-search-panel #mdbook-searchbar:focus{outline:2px solid #0752ff;outline-offset:3px}
+.book-search-panel #mdbook-searchresults-outer{border:0;background:transparent;color:#1d1d1f}
+.book-search-panel__examples span{border:0;border-radius:999px;background:#f0f3fc;color:#0752ff}
+.book-search-close{border:0;border-radius:50%;background:#f5f5f7}

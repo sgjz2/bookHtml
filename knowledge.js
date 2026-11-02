@@ -3,7 +3,7 @@
   const clamp = (v,a,b) => Math.min(b,Math.max(a,v));
   function viewFrame(width,height){
     // Reserve actual room above the upper star groups for their chapter names.
-    const top=144,bottom=height-(width<650?190:145);
+    const top=width<650?100:144,bottom=height-(width<650?70:145);
     return {cx:width/2,cy:(top+bottom)/2,sx:Math.max(160,width-(width<650?50:110))/1900,sy:Math.max(220,bottom-top)/1450};
   }
   function project(point,camera,width,height) {
